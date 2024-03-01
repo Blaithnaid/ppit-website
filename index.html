@@ -8,12 +8,11 @@
 			margin: 0;
 		}
 		header {
-			background-color: #f4f4f4;
 			color: #333;
 			text-align: center;
 			padding: 1em;
 		}
-		.indexcover {
+		body {
 			margin: 0;
 			width: 100%;
 			height: 1000px;
@@ -22,15 +21,35 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
+		nav {
+			border: 2px solid black;
+			background-color: white;
+			padding: 5px;
+			width: fit-content;
+		}
+		nav * {
+			margin: 1px 5px;
+		}
 	</style>
 </head>
 <body>
 	<header>
 		<img src="" alt="">
 		Nephin Media
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			<a href="gallery.html">Gallery</a>
+		</nav>
 	</header>
-	<div class="indexcover">
-
-	</div>
+	<main>
+		<h1>Welcome to Nephin Media</h1>
+		<p>Here is some text about the site</p>
+	</main>
+	<div class="loginbutton"><a href="login.html">Login</a></div>
+	<footer>
+		<p>&copy; 2020 Nephin Media</p>
+	</footer>
 </body>
 </html>

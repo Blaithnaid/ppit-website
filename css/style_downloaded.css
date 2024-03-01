@@ -193,7 +193,7 @@ body#checkout-page #site-info {
 
 .shopping-cart tr:nth-child(even) {
 	background: #fafafa;
-},
+}
 
 .shopping-cart td.pdelete {
 	text-align: center;
