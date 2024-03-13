@@ -5,13 +5,13 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "icon-192x192.png",
+            "src": "img/icon-192x192.png",
             "type": "image/png",
             "sizes": "192x192",
             "purpose": "maskable any"
         },
         {
-            "src": "icon-512x512.png",
+            "src": "img/icon-512x512.png",
             "type": "image/png",
             "sizes": "512x512"
         }

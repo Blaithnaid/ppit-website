@@ -1,3 +1,4 @@
+// IMPORTED FROM DANIEL'S GITHUB
 // Define cache name and files to cache
 var cacheName = 'pwa-app-cache';
 var filesToCache = ["/"];

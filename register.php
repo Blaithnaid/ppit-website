@@ -1,3 +1,4 @@
+<!-- IMPORTED FROM DANIEL'S GITHUB -->
 <?php
 
 session_start();
