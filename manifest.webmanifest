@@ -1,0 +1,21 @@
+{
+    "name": "PWA Demo App",
+    "short_name": "PWADemo",
+    "start_url": "./",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "background_color": "#FFF",
+    "theme_color": "#FFF"
+}

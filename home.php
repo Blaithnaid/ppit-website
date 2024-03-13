@@ -34,6 +34,7 @@
 	<div class="loginbutton"><a href="login.html">Login</a></div>
 	<footer>
 		<p>&copy; 2020 Nephin Media</p>
+		<a href="logout.php" style="font-size: 18px; color: red; text-decoration: none;">Logout</a>◘
 	</footer>
 </body>
 </html>
