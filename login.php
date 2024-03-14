@@ -6,20 +6,16 @@ if (isset($_SESSION['user_id'])) {
 } else if (isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $connection = createConnection();
-    $query = "SELECT * FROM users WHERE username = '$username'";
-    $result = mysqli_query($connection, $query);
-    if (mysqli_num_rows($result) == 1) {
-        $row = mysqli_fetch_assoc($result);
-        if (password_verify($password, $row['password'])) {
-            $_SESSION['user_id'] = $row['id'];
-            $_SESSION['username'] = $row['username'];
-            header('Location: home.php');
+    $conn = createConnection();
+    if ($conn) {
+
+        if ($attempt = validateUser($username, $password, $conn) === true) {
+            header('Location: index.php');
         } else {
-            echo "Invalid password";
-        }
+            echo $attempt;
+        };
     } else {
-        echo "Invalid username";
+        echo "Connection failed";
     }
 }
 ?>
