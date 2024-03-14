@@ -33,10 +33,10 @@ if (isset($_SESSION['user_id'])) {
         body {
             margin: 0;
             width: 100%;
-            background: url('img/background_scaled.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+			background: url('img/background_scaled.png');
+			background-position: top center;
+			background-repeat: no-repeat;
+			background-size: cover;
         }
 
         #loginbox {

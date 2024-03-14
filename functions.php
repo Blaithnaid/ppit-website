@@ -19,3 +19,7 @@ function redirectLogin() {
     header("Location: login.php");
     exit();
 }
+
+function validateUser($username, $password) {
+    
+}

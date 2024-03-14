@@ -40,3 +40,10 @@ header {
     padding: 15px;
     background: radial-gradient(circle at 50% 50%, rgba(76, 151, 255, 1) 11%, rgba(0, 188, 212, 0) 60%);
 }
+/* Style the login and logout buttons */
+.loginbutton, .logoutbutton {
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

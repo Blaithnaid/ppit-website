@@ -43,12 +43,6 @@
 			background-color: #f2f2f2;
 			border: 1px solid black;
 		}
-		#loginbutton {
-			font-size: 1.2em;
-			position: absolute;
-			bottom: 10px;
-			right: 10px;
-		}
 	</style>
 </head>
 
@@ -72,9 +66,9 @@
 		</main>
 		<?php
 		if (isset($_SESSION['x'])) {
-			echo "<div id='logoutbutton'><a href='logout.php'>Logout</a></div>";
+			echo "<div class='logoutbutton'><a href='logout.php'>Logout</a></div>";
 		} else {
-			echo "<div id='loginbutton'><a href='login.php'>Login</a></div>";
+			echo "<div class='loginbutton'><a href='login.php'>Login</a></div>";
 		}
 		?>
 	</div>
