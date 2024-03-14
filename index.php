@@ -4,7 +4,7 @@
 	<title>Nephin Media | Home</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<style>
-		body {
+		#home_spread {
 			display: flex;
 			flex-direction: column;
 			min-height: 100vh;
@@ -32,19 +32,21 @@
 	<div class="logo">
 		<img src="img/nephin_transp.png" height="120px" alt="">
 	</div>
-	<header>
-		<nav>
-			<a href="index.php">Home</a>
-			<a href="about.php">About</a>
-			<a href="contact.php">Contact</a>
-			<a href="gallery.php">Gallery</a>
-		</nav>
-	</header>
 	<div id="home_spread">
+		<header>
+			<nav>
+				<a href="index.php">Home</a>
+				<a href="about.php">About</a>
+				<a href="contact.php">Contact</a>
+				<a href="gallery.php">Gallery</a>
+			</nav>
+		</header>
 		<main>
 			<p>Welcome to Nephin Media</p>
 			<p>Here is some text about the site</p>
 		</main>
+	</div>
+	<div >
 	</div>
 <?php
 if (!isset($_SESSION['x'])) {
