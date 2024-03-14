@@ -9,6 +9,7 @@
 			display: flex;
 			flex-direction: column;
 			min-height: 100vh;
+			max-height: 720px;
 			margin: 0;
 			width: 100%;
 			height: 1000px;
@@ -20,8 +21,6 @@
 
 		footer {
 			margin-top: auto;
-			position: absolute;
-			bottom: 0;
 			width: 100%;
 			text-align: center;
 			background-color: #f2f2f2;
@@ -36,11 +35,10 @@
 			margin: 0;
 			padding-left: 20%;
 			padding-right: 20%;
-			width: 100%;
+			/* width: 100%; */
 			height: 100%;
 		}
 		.flexitem {
-			/* width: 100%; */
 			margin: 10px;
 			padding: 20px;
 			text-align: center;
@@ -103,7 +101,7 @@
 		</div>
 	</div>
 	<footer>
-		<p>&copy; 2020 Nephin Media</p>
+		<p>&copy; 2024 Nephin Media</p>
 	</footer>
 </body>
 
