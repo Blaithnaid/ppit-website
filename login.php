@@ -1,6 +1,7 @@
 <?php
 require_once 'functions.php';
 session_start();
+$promptText = "";
 if (isset($_SESSION['user_id'])) {
 	header('Location: home.php');
 } else if (isset($_POST['username']) && isset($_POST['password'])) {
@@ -8,15 +9,15 @@ if (isset($_SESSION['user_id'])) {
 	$password = $_POST['password'];
 	$conn = createConnection();
 	if (!$conn) {
-		echo("Connection failed: " . mysqli_connect_error());
+		$promptText = "Connection failed: " . mysqli_connect_error();
 	}
 	if ($attempt = validateUser($username, $password, $conn) === true) {
 		header('Location: index.php');
 	} else {
-		echo $attempt;
+		$promptText = $attempt;
 	}
 } else {
-	echo "Please enter a username and password";
+	$promptText =  "Please enter a username and password.";
 }
 ?>
 <!DOCTYPE html>
@@ -94,14 +95,16 @@ if (isset($_SESSION['user_id'])) {
 		<img src="img/nephin_transp.png" height="120px" alt="">
 	</div>
 	<div id="back">
-		<a href="index.html">Back to Home</a>
+		<a href="index.php">Back to Home</a>
 	</div>
 	<div id="loginbox">
 		<h1>Login</h1>
+		<p><?php echo $promptText; ?></p>
 		<form action="login.php" method="post">
 			<input type="text" name="username" placeholder="Username" required>
 			<input type="password" name="password" placeholder="Password" required>
 			<input type="submit" value="Login">
 		</form>
+		<a href="create_account.php"><h4>Create an Account</h4></a>
 	</div>
 </body>
