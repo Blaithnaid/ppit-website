@@ -3,6 +3,7 @@ session_start();
 if( isset($_SESSION['user_id']) ){
 	header('Location: home.php');
 }
+require_once 'functions.php';
 ?>
 <!DOCTYPE html>
 <html>

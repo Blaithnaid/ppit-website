@@ -26,3 +26,12 @@ header {
     left: 0;
     padding: 15px;
 }
+#logogradient {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 126, 167, 1) 0%, rgba(0, 188, 212, 0) 68%);
+}
