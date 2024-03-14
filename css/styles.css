@@ -1,5 +1,6 @@
 /* Import variable Fredoka font from file */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+/* Styling for the navigation bar */
 nav {
     border: 2px solid black;
     background-color: white;
@@ -9,10 +10,12 @@ nav {
 nav * {
     margin: 1px 5px;
 }
+/* Whole page styling */
 body {
     font-family: 'Fredoka One', cursive;
     margin: 0;
 }
+/* Styling for the header */
 header {
     display: flex;
     flex-direction: row-reverse;
@@ -20,12 +23,14 @@ header {
     color: #333;
     text-align: center;
 }
+/* Style the logo so it stays in the top left corner */
 .logo {
     position: absolute;
     top: 0;
     left: 0;
     padding: 15px;
 }
+/* Style the logo so it has a gradient behind it */
 #logogradient {
     height: 120px;
     width: 120px;

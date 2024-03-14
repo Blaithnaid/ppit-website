@@ -18,7 +18,6 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
-
 		footer {
 			margin-top: auto;
 			width: 100%;
@@ -35,7 +34,6 @@
 			margin: 0;
 			padding-left: 20%;
 			padding-right: 20%;
-			/* width: 100%; */
 			height: 100%;
 		}
 		.flexitem {
@@ -44,6 +42,12 @@
 			text-align: center;
 			background-color: #f2f2f2;
 			border: 1px solid black;
+		}
+		#loginbutton {
+			font-size: 1.2em;
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
 		}
 	</style>
 </head>
