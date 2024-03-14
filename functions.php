@@ -34,6 +34,6 @@ function validateUser($username, $password, $conn) {
         }
     } else {
         return "Invalid username";
-        // returning two separate values isn't very secure, but I just think it looks fancier
+        // returning two separate outcomes isn't very secure, but I just think it looks fancier
     }
 }
