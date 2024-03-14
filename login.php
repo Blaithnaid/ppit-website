@@ -1,7 +1,7 @@
 <?php
-require_once 'functions.php';
-session_start();
-$promptText = "";
+require_once 'functions.php'; // include the functions file so we can use createConnection() and validateUser()
+session_start(); // start or resume the session
+
 if (isset($_SESSION['user_id'])) {
 	header('Location: home.php');
 } else if (isset($_POST['username']) && isset($_POST['password'])) {
@@ -17,7 +17,7 @@ if (isset($_SESSION['user_id'])) {
 		$promptText = $attempt;
 	}
 } else {
-	$promptText =  "Please enter a username and password.";
+	$promptText = "Please enter a username and password.";
 }
 ?>
 <!DOCTYPE html>
@@ -99,12 +99,16 @@ if (isset($_SESSION['user_id'])) {
 	</div>
 	<div id="loginbox">
 		<h1>Login</h1>
-		<p><?php echo $promptText; ?></p>
+		<p>
+			<?php echo $promptText; ?>
+		</p>
 		<form action="login.php" method="post">
 			<input type="text" name="username" placeholder="Username" required>
 			<input type="password" name="password" placeholder="Password" required>
 			<input type="submit" value="Login">
 		</form>
-		<a href="create_account.php"><h4>Create an Account</h4></a>
+		<a href="register.php">
+			<h4>Create an Account</h4>
+		</a>
 	</div>
 </body>
