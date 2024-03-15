@@ -5,19 +5,7 @@
 	<title>Nephin Media | Home</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<style>
-		#home_spread {
-			display: flex;
-			flex-direction: column;
-			min-height: 100vh;
-			max-height: 720px;
-			margin: 0;
-			width: 100%;
-			height: 1000px;
-			background: url('img/background_scaled.png');
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
+		
 		footer {
 			margin-top: auto;
 			width: 100%;
@@ -26,6 +14,7 @@
 			padding: 1px;
 		}
 		.flexcontent {
+			border-top: 30px solid gray;
 			display: flex;
 			flex-direction: column;
 			flex-wrap: wrap;
