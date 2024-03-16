@@ -36,18 +36,26 @@
 			background-color: #f2f2f2;
 			border: 1px solid black;
 		}
+
 		.flexitem img {
 			width: 380px;
 			height: auto;
 		}
 
 		.spread_text {
+			font-size: 1.4em;
+			text-align: justify;
+			color: black;
 			position: absolute;
-			bottom: 10px;
-			right: auto;
+			bottom: 10%;
+			right: 18%;
 			margin: 0;
 			padding: 0;
-			color: white;
+		}
+
+		.spread_text p {
+			margin: 10px;
+			padding: 0;
 		}
 	</style>
 </head>
@@ -66,9 +74,10 @@
 				<a href="gallery.php">Gallery</a>
 			</nav>
 		</header>
-		<div id="spread_text">
+		<div class="spread_text">
 			<p>Welcome to Nephin Media</p>
 			<p>Here is some text about the site</p>
+			<p style="font-size: 0.8em; margin-top: 30px;">↓ Scroll down to learn more about me.</p>
 		</div>
 		<?php
 		if (isset ($_SESSION['x'])) {
@@ -85,27 +94,27 @@
 			<p>Some text</p>
 		</div>
 		<div class="flexitem">
-		<img src="img/lockscreen.png" alt="">
+			<img src="img/lockscreen.png" alt="">
 			<h2>Heading 2</h2>
 			<p>Some text</p>
 		</div>
 		<div class="flexitem">
-		<img src="img/lockscreen.png" alt="">
+			<img src="img/lockscreen.png" alt="">
 			<h2>Heading 3</h2>
 			<p>Some text</p>
 		</div>
 		<div class="flexitem">
-		<img src="img/lockscreen.png" alt="">
+			<img src="img/lockscreen.png" alt="">
 			<h2>Heading 4</h2>
 			<p>Some text</p>
 		</div>
 		<div class="flexitem">
-		<img src="img/lockscreen.png" alt="">
+			<img src="img/lockscreen.png" alt="">
 			<h2>Heading 5</h2>
 			<p>Some text</p>
 		</div>
 		<div class="flexitem">
-		<img src="img/lockscreen.png" alt="">
+			<img src="img/lockscreen.png" alt="">
 			<h2>Heading 6</h2>
 			<p>Some text</p>
 		</div>
