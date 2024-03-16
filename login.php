@@ -2,9 +2,9 @@
 require_once 'functions.php'; // include the functions file so we can use createConnection() and validateUser()
 session_start(); // start or resume the session
 
-if (isset($_SESSION['user_id'])) {
+if (isset ($_SESSION['user_id'])) {
 	header('Location: home.php');
-} else if (isset($_POST['username']) && isset($_POST['password'])) {
+} else if (isset ($_POST['username']) && isset ($_POST['password'])) {
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$conn = createConnection();
@@ -24,7 +24,7 @@ if (isset($_SESSION['user_id'])) {
 <html>
 
 <head>
-	<title>Login</title>
+	<title>Nephin Media | Login</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<style>
 		body {
@@ -35,59 +35,8 @@ if (isset($_SESSION['user_id'])) {
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
-
-		#loginbox {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 300px;
-			padding: 20px;
-			background: white;
-			border: 3px solid black;
-			text-align: center;
-		}
-
-		#loginbox input {
-			margin: 10px 0;
-			padding: 10px;
-			width: 100%;
-			box-sizing: border-box;
-		}
-
-		#loginbox input[type="submit"] {
-			background: #4CAF50;
-			color: white;
-			border: none;
-		}
-
-		.logo {
-			position: absolute;
-			top: 0;
-			left: 0;
-			padding: 15px;
-		}
-
-		#back {
-			position: absolute;
-			top: 15px;
-			right: 10px;
-		}
-
-		#back a {
-			background-color: white;
-			text-decoration: none;
-			color: black;
-			border: 2px solid black;
-			padding: 5px;
-		}
-
-		#back a:hover {
-			background-color: black;
-			color: white;
-			border: 2px solid white;
-		}
 	</style>
+	<link rel="stylesheet" href="css/forms.css">
 </head>
 
 <body>
