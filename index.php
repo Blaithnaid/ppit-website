@@ -14,15 +14,14 @@
 		}
 
 		.flexcontent {
-			border-top: 30px solid gray;
+			margin: 0 auto;
+			margin-top: 15px;
+			width: 100%;
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
-			justify-content: space-around;
+			justify-content: center;
 			align-items: center;
-			margin: 0;
-			padding-left: 10%;
-			padding-right: 10%;
 			height: 100%;
 		}
 
@@ -30,7 +29,7 @@
 			min-height: 280px;
 			flex-wrap: wrap;
 			min-width: 40%;
-			margin: 10px;
+			margin: 20px;
 			padding: 20px;
 			text-align: center;
 			background-color: #f2f2f2;
@@ -42,21 +41,7 @@
 			height: auto;
 		}
 
-		.spread_text {
-			font-size: 1.4em;
-			text-align: justify;
-			color: black;
-			position: absolute;
-			bottom: 10%;
-			right: 18%;
-			margin: 0;
-			padding: 0;
-		}
-
-		.spread_text p {
-			margin: 10px;
-			padding: 0;
-		}
+		
 	</style>
 </head>
 
@@ -86,6 +71,9 @@
 			echo "<div class='loginbutton'><a href='login.php'>Login</a></div>";
 		}
 		?>
+	</div>
+	<div class="spread_separator">
+		Scroll down more lol
 	</div>
 	<div class=flexcontent>
 		<div class="flexitem">
