@@ -1,3 +1,4 @@
+/* 
 # ************************************************************
 # Sequel Pro SQL dump
 # Version 4096
@@ -6,9 +7,10 @@
 # http://code.google.com/p/sequel-pro/
 #
 # Host: localhost (MySQL 5.5.42)
-# Database: auth
+# Database: nephin_admin
 # Generation Time: 2015-06-10 01:08:31 +0000
-# ************************************************************
+ ************************************************************
+*/
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -18,10 +20,9 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
-
-# Dump of table users
-# ------------------------------------------------------------
+DROP DATABASE IF EXISTS `nephin_admin`;
+CREATE DATABASE `nephin_admin`;
+USE `nephin_admin`;
 
 DROP TABLE IF EXISTS `users`;
 

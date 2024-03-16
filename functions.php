@@ -4,7 +4,7 @@ function createConnection()
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "fuelstock_beta";
+    $dbname = "nephinadmin";
 
     // Create connection
     $connection = new mysqli($servername, $username, $password, $dbname);
