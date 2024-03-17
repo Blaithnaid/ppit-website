@@ -14,6 +14,7 @@ ini_set('display_errors', 1);
 		body {
 			margin: 0;
 			width: 100%;
+            max-height: 100vh;  
 			background: url('img/background_scaled.png');
 			background-position: top center;
 			background-repeat: no-repeat;

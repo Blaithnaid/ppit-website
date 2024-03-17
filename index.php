@@ -69,11 +69,10 @@ ini_set('display_errors', 1);
 		</div>
 		<?php
 		if (isset ($_SESSION['user_id'])) {
-			echo "<div class='logoutbutton'><a href='logout.php'>!!!!!LOGGED IN!!!!!</a></div>";
+			echo "<div class='logoutbutton'><a href='logout.php'>Log out</a></div>";
 		} else {
-			echo "<div class='loginbutton'><a href='login.php'>!!!!!LOGGED OUT!!!!!</a></div>";
+			echo "<div class='loginbutton'><a href='login.php'>Log in</a></div>";
 		}
-		echo "<h1>Hi, " . $_SESSION['username'] . "</h1>";
 		?>
 	</div>
 	<div class="spread_separator">
