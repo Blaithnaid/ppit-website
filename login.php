@@ -1,9 +1,9 @@
 <?php
 require_once 'functions.php'; // include the functions file so we can use createConnection() and validateUser()
 session_start(); // start or resume the session
-
-if (isset ($_SESSION['user_id'])) {
-	header('Location: home.php');
+// isset($_SESSION['user_id'])
+if (false) {
+	header('Location: index.php');
 } else if (isset ($_POST['username']) && isset ($_POST['password'])) {
 	$username = $_POST['username'];
 	$password = $_POST['password'];

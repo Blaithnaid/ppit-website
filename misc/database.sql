@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(250) NOT NULL DEFAULT '',
-  `password` varchar(200) NOT NULL DEFAULT '',
+  `password` varchar(255) NOT NULL DEFAULT '',
   `isAdmin` BOOLEAN NOT NULL DEFAULT 0,
   `phoneNumber` PRIMARY KEY (`id`)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;

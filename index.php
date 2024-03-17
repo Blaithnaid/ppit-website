@@ -1,3 +1,8 @@
+<?php
+session_start();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
 <!DOCTYPE html>
 <html>
 
@@ -63,11 +68,12 @@
 			<p style="font-size: 0.8em; margin-top: 30px;">↓ Scroll down to learn more about me.</p>
 		</div>
 		<?php
-		if (isset ($_SESSION['x'])) {
-			echo "<div class='logoutbutton'><a href='logout.php'>Logout</a></div>";
+		if (isset ($_SESSION['user_id'])) {
+			echo "<div class='logoutbutton'><a href='logout.php'>!!!!!LOGGED IN!!!!!</a></div>";
 		} else {
-			echo "<div class='loginbutton'><a href='login.php'>Login</a></div>";
+			echo "<div class='loginbutton'><a href='login.php'>!!!!!LOGGED OUT!!!!!</a></div>";
 		}
+		echo "<h1>Hi, " . $_SESSION['username'] . "</h1>";
 		?>
 	</div>
 	<div class="spread_separator">
