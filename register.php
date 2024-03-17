@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 // Import the functions.php file
 require_once 'functions.php';
 
@@ -26,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $connection = createConnection();
 
         // Insert the username and hashed password into the database
-        $query = "INSERT INTO users (username, password) VALUES ('$username', '$hashedPassword')";
+        $query = "INSERT INTO users (`username`, `password`) VALUES ('$username', '$hashedPassword')";
         mysqli_query($connection, $query);
 
         // Close the database connection
@@ -68,16 +70,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     <div id="loginbox">
         <h1>Create Account</h1>
-        <form method="POST" action="">
+        <form action="register.php" method="post">
             <label for="username">Username:</label>
             <input type="text" name="username" id="username" required><br>
-
 
             <label for="password">Password:</label>
             <input type="password" name="password" id="password" required><br>
 
             <label for="confirmpassword">Confirm Password:</label>
             <input type="password" name="confirmpassword" id="confirmpassword" required><br>
+
             <input type="submit" value="Create Account">
         </form>
     </div>

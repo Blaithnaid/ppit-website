@@ -40,8 +40,6 @@
 			width: 380px;
 			height: auto;
 		}
-
-		
 	</style>
 </head>
 

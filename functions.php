@@ -4,7 +4,7 @@ function createConnection()
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "nephinadmin";
+    $dbname = "nephin_admin";
 
     // Create connection
     $connection = new mysqli($servername, $username, $password, $dbname);
@@ -44,7 +44,7 @@ function validateUser($username, $password)
 function usernameExists($username)
 {
     $conn = createConnection();
-    $query = "SELECT * FROM users WHERE username = '$username'";
+    $query = "SELECT * FROM `users` WHERE `username` = '$username'";
     $result = mysqli_query($conn, $query);
     if (mysqli_num_rows($result) > 0) {
         return true;
