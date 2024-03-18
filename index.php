@@ -29,32 +29,16 @@ ini_set('display_errors', 1);
 			align-items: center;
 			height: 100%;
 		}
-
-		.flexitem {
-			min-height: 280px;
-			flex-wrap: wrap;
-			min-width: 40%;
-			margin: 20px;
-			padding: 20px;
-			text-align: center;
-			background-color: #f2f2f2;
-			border: 1px solid black;
-		}
-
-		.flexitem img {
-			width: 380px;
-			height: auto;
-		}
 	</style>
 </head>
 
 <body>
-	<div id="logogradient"></div>
-	<div class="logo">
-		<img src="img/nephin_transp.png" height="120px" alt="">
-	</div>
 	<div class="home_spread">
 		<header>
+			<div id="logogradient"></div>
+			<div class="logo">
+				<img src="img/nephin_transp.png" height="120px" alt="">
+			</div>
 			<nav>
 				<a href="index.php">Home</a>
 				<a href="about.php">About</a>
@@ -76,7 +60,7 @@ ini_set('display_errors', 1);
 		?>
 	</div>
 	<div class="spread_separator">
-		Scroll down more lol
+		If you're looking to talk to me, head straight over to the <a href="contact.php">Contact</a> page!
 	</div>
 	<div class=flexcontent>
 		<div class="flexitem">
