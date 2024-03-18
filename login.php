@@ -14,10 +14,10 @@ if (false) {
 	if (!$conn) {
 		$promptText = "Connection failed: " . mysqli_connect_error();
 	}
-	if ($attempt = validateUser($username, $password, $conn) === true) {
+	if ($attempt = validateUser($username, $password) === true) {
 		header('Location: index.php');
 	} else {
-		$promptText = $attempt;
+		$promptText = 'The entered username or password is incorrect. Please try again.';
 	}
 } else {
 	$promptText = "Please enter a username and password.";

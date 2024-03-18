@@ -33,10 +33,7 @@ function validateUser($username, $password)
             $_SESSION['user_id'] = $row['id'];
             $_SESSION['username'] = $row['username'];
             return true;
-        } else {
-            return "Invalid password. Please try again.";
         }
-    } else {
         return "A user with that username does not exist. Please try again.";
         // returning two separate outcomes isn't very secure, but I just think it looks fancier
     }

@@ -8,7 +8,9 @@ CREATE TABLE `users` (
   `username` varchar(250) NOT NULL DEFAULT '',
   `password` varchar(255) NOT NULL DEFAULT '',
   `isAdmin` BOOLEAN NOT NULL DEFAULT 0,
-  `phoneNumber` PRIMARY KEY (`id`)
+  `phoneNumber` PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
 INSERT INTO `users` (`id`, `username`, `pwd`, `isAdmin`)
