@@ -7,41 +7,24 @@ ini_set("display_errors", 1);
 <html>
 
 <head>
-    <title>Nephin Media | Home</title>
+    <title>Nephin Media | About</title>
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-        .flexcontent {
-            margin: 0 auto;
-            margin-top: 15px;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-        }
-
-        .flexitem {
-            min-height: 280px;
-            flex-wrap: wrap;
-            min-width: 40%;
-            margin: 20px;
-            padding: 20px;
-            text-align: center;
-            background-color: #f2f2f2;
-            border: 1px solid black;
-        }
-
-        .flexitem img {
-            width: 380px;
-            height: auto;
-        }
-
         .logonav {
             align-self: flex-end;
             display: inline;
+        }
+        header {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+        header nav {
+            margin-right: 15px;
         }
     </style>
 </head>
@@ -55,9 +38,9 @@ ini_set("display_errors", 1);
             <a href="contact.php">Contact</a>
             <a href="gallery.php">Gallery</a>
         </nav>
-        <h2>Nephin Media ~ About</h2>
+        <h4>Nephin Media | About</h4>
         <div class="logonav">
-            <img src="img/nephin_transp.png" height="120px" alt="">
+            <img src="img/nephin_transp.png" height="50px" alt="">
         </div>
     </header>
 </body>
