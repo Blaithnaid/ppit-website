@@ -40,10 +40,12 @@ ini_set("display_errors", 1);
 
         .logonav {
             align-self: flex-end;
+            display: inline;
         }
-        .logonav img {
-			height: 50px;
-		}
+        .logonav * {
+            display: inline;
+
+        }
     </style>
 </head>
 
@@ -56,6 +58,7 @@ ini_set("display_errors", 1);
             <a href="contact.php">Contact</a>
             <a href="gallery.php">Gallery</a>
         </nav>
+        <h2>Nephin Media ~ About</h2>
         <div class="logonav">
             <img src="img/nephin_transp.png" height="120px" alt="">
         </div>
