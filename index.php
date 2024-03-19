@@ -1,7 +1,7 @@
 <?php
 session_start();
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
+ini_set("display_errors", 1);
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,7 @@ ini_set('display_errors', 1);
 			background-color: #f2f2f2;
 			padding: 1px;
 		}
-
+aaaa
 		.flexcontent {
 			margin: 0 auto;
 			margin-top: 15px;
@@ -51,13 +51,11 @@ ini_set('display_errors', 1);
 			<p>Here is some text about the site</p>
 			<p style="font-size: 0.8em; margin-top: 30px;">↓ Scroll down to learn more about me.</p>
 		</div>
-		<?php
-		if (isset ($_SESSION['user_id'])) {
-			echo "<div class='logoutbutton'><a href='logout.php'>Log out</a></div>";
-		} else {
-			echo "<div class='loginbutton'><a href='login.php'>Log in</a></div>";
-		}
-		?>
+		<?php if (isset($_SESSION["user_id"])) {
+      echo "<div class='logoutbutton'><a href='logout.php'>Log out</a></div>";
+  } else {
+      echo "<div class='loginbutton'><a href='login.php'>Log in</a></div>";
+  } ?>
 	</div>
 	<div class="spread_separator">
 		If you're looking to talk to me, head straight over to the <a href="contact.php">Contact</a> page!
