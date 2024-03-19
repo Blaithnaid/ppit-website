@@ -1,7 +1,7 @@
 <?php
 session_start();
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
+ini_set("display_errors", 1);
 ?>
 <!DOCTYPE html>
 <html>
@@ -50,17 +50,16 @@ ini_set('display_errors', 1);
 <body>
     <!-- <div id="logogradient"></div> -->
    <header>
-    <div class="logonav">
-        <img src="img/nephin_transp.png" height="120px" alt="">
-    </div>
         <nav>
             <a href="index.php">Home</a>
             <a href="about.php">About</a>
             <a href="contact.php">Contact</a>
             <a href="gallery.php">Gallery</a>
         </nav>
+        <div class="logonav">
+            <img src="img/nephin_transp.png" height="120px" alt="">
+        </div>
     </header>
-
 </body>
 
 </html>
