@@ -9,6 +9,7 @@ ini_set("display_errors", 1);
 <head>
 	<title>Nephin Media | Home</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<style>
 		footer {
 			margin-top: auto;
@@ -17,7 +18,6 @@ ini_set("display_errors", 1);
 			background-color: #f2f2f2;
 			padding: 1px;
 		}
-aaaa
 		.flexcontent {
 			margin: 0 auto;
 			margin-top: 15px;
@@ -37,7 +37,7 @@ aaaa
 		<header>
 			<div id="logogradient"></div>
 			<div class="logo">
-				<img src="img/nephin_transp.png" height="120px" alt="">
+				<img src="img/nephin_transp.png" height="200px" alt="">
 			</div>
 			<nav>
 				<a href="index.php">Home</a>
