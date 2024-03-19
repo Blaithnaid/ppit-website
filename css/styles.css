@@ -12,6 +12,12 @@ header {
     color: #333;
     text-align: center;
 }
+header h2 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+}
 /* Styling for the navigation bar */
 nav {
     border: 2px solid black;

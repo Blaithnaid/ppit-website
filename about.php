@@ -9,6 +9,7 @@ ini_set("display_errors", 1);
 <head>
     <title>Nephin Media | Home</title>
     <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
         .flexcontent {
             margin: 0 auto;
@@ -41,10 +42,6 @@ ini_set("display_errors", 1);
         .logonav {
             align-self: flex-end;
             display: inline;
-        }
-        .logonav * {
-            display: inline;
-
         }
     </style>
 </head>
