@@ -1,26 +1,26 @@
 <?php
-require_once 'functions.php'; // include the functions file so we can use createConnection() and validateUser()
+require_once "functions.php"; // include the functions file so we can use createConnection() and validateUser()
 session_start(); // start or resume the session
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
+ini_set("display_errors", 1);
 
-// isset($_SESSION['user_id'])
-if (false) {
-	header('Location: index.php');
-} else if (isset ($_POST['username']) && isset ($_POST['password'])) {
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-	$conn = createConnection();
-	if (!$conn) {
-		$promptText = "Connection failed: " . mysqli_connect_error();
-	}
-	if ($attempt = validateUser($username, $password) === true) {
-		header('Location: index.php');
-	} else {
-		$promptText = 'The entered username or password is incorrect. Please try again.';
-	}
+if (isset($_SESSION["user_id"])) {
+    header("Location: index.php");
+} elseif (isset($_POST["username"]) && isset($_POST["password"])) {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $conn = createConnection();
+    if (!$conn) {
+        $promptText = "Connection failed: " . mysqli_connect_error();
+    }
+    if (validateUser($username, $password) === true) {
+        header("Location: index.php");
+    } else {
+        $promptText =
+            "The entered username or password is incorrect. Please try again.";
+    }
 } else {
-	$promptText = "Please enter a username and password.";
+    $promptText = "Please enter a username and password.";
 }
 ?>
 <!DOCTYPE html>
