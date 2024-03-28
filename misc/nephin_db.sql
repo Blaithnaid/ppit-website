@@ -4,16 +4,15 @@ USE `nephin_admin`;
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `username` varchar(250) NOT NULL DEFAULT '',
-  `password` varchar(255) NOT NULL DEFAULT '',
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `username` varchar(250),
+  `password` varchar(255) NOT NULL, 
   `isAdmin` BOOLEAN NOT NULL DEFAULT 0,
-  `phoneNumber` PRIMARY KEY (`id`),
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
-INSERT INTO `users` (`id`, `username`, `pwd`, `isAdmin`)
+INSERT INTO `users` (`id`, `username`, `password`, `isAdmin`)
 VALUES (
     1,
     'admin',
@@ -30,8 +29,8 @@ VALUES (
 DROP TABLE IF EXISTS `submissions`;
 CREATE TABLE `submissions` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `submission_type` SET ('booking', 'contact', 'support') NOT NULL DEFAULT 'email',
-  `user_id` varchar(250) NOT NULL DEFAULT '',
+  `submission_type` SET ('booking', 'contact', 'support') NOT NULL, 
+  `user_id` int(10) unsigned NOT NULL, 
   `when_submitted` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   FOREIGN KEY (`user_id`) REFERENCES `users`(`id`)
