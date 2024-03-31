@@ -11,13 +11,7 @@ ini_set("display_errors", 1);
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<style>
-		footer {
-			margin-top: auto;
-			width: 100%;
-			text-align: center;
-			background-color: #f2f2f2;
-			padding: 1px;
-		}
+		
 		.flexcontent {
 			margin: 0 auto;
 			margin-top: 15px;
