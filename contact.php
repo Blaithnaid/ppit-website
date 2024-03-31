@@ -38,7 +38,7 @@ ini_set("display_errors", 1);
             <a href="contact.php">Contact</a>
             <a href="gallery.php">Gallery</a>
         </nav>
-        <h4>Nephin Media | About</h4>
+        <h4>Nephin Media | Contact</h4>
         <div class="logonav">
             <img src="img/nephin_transp.png" height="50px" alt="">
         </div>
