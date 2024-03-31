@@ -18,6 +18,16 @@ header h2 {
     padding: 0;
     justify-self: center;
 }
+/* footer styling */
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: #333;
+    text-align: center;
+}
 /* Styling for the navigation bar */
 nav {
     border: 2px solid black;
