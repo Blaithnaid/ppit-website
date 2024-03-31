@@ -1,25 +1,25 @@
 <?php
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
+ini_set("display_errors", 1);
 // Import the functions.php file
-require_once 'functions.php';
+require_once "functions.php";
 
 // Check if the form is submitted
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Get the username and password from the form
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $confirmPassword = $_POST['confirmpassword'];
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $confirmPassword = $_POST["confirmpassword"];
     $returnText = "";
 
     // Check if the password and confirm password match
     if ($password !== $confirmPassword) {
         $returnText = "Passwords do not match";
-        exit;
+        exit();
         // Check if the username is already taken
     } elseif (usernameExists($username)) {
         $returnText = "Username already taken";
-        exit;
+        exit();
     } else {
         // Hash the password
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
@@ -35,10 +35,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         mysqli_close($connection);
 
         // Redirect to a success page
-        header('Location: success.php');
-        exit;
+        header("Location: success.php");
+        exit();
     }
-
 }
 ?>
 
