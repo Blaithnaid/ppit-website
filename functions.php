@@ -16,10 +16,11 @@ function createConnection()
 
 function redirectLogin()
 {
-    // set a variable in the session to indicate that the user tried to access a page without logging in
-    $_SESSION["triedNoLogin"] = "no";
-    header("Location: login.php");
-    exit();
+if (!isset($_SESSION["user_id"])) {
+        $_SESSION["noCredentials"] = "yes";
+        header("Location: login.php");
+        exit();
+    }
 }
 
 function validateUser($username, $password)
@@ -29,12 +30,16 @@ function validateUser($username, $password)
     $result = mysqli_query($conn, $query);
     if (mysqli_num_rows($result) == 1) {
         $row = mysqli_fetch_assoc($result);
-        if (password_verify($password, $row["password"])) {
-            $_SESSION["user_id"] = $row["id"];
-            $_SESSION["username"] = $row["username"];
+        if (password_verify($password, $row['password'])) {
+            $_SESSION['user_id'] = $row['id'];
+            $_SESSION['username'] = $row['username'];
+            if ($row['isAdmin'] == 1) {
+                $_SESSION['isAdmin'] = true;
+            }
             return true;
         }
         return "A user with that username does not exist. Please try again.";
+        // returning two separate outcomes isn't very secure, but I just think it looks fancier
     }
 }
 function usernameExists($username)
