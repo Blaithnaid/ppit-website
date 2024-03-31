@@ -17,7 +17,7 @@ if (isset($_SESSION["user_id"])) {
         header("Location: index.php");
     } else {
         $promptText =
-            "The entered username or password is incorrect. Please try again.";
+            "The entered username or password is incorrect.<br>Please try again.";
     }
 } else {
     $promptText = "Please enter a username and password.";
