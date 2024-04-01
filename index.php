@@ -23,6 +23,11 @@ ini_set("display_errors", 1);
 			align-items: center;
 			height: 100%;
 		}
+		@media screen and (max-width: 800px) {
+			.flexcontent {
+				flex-direction: column;
+			}
+		}
 	</style>
 </head>
 
