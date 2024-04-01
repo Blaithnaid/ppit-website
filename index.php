@@ -66,17 +66,17 @@ ini_set("display_errors", 1);
 			<p>Some text</p>
 		</div>
 		<div class="flexitem">
-			<img src="img/lockscreen.png" alt="">
+			<img src="img/index/webdesign.png" alt="">
 			<h2>Web Design</h2>
 			<p>Some text</p>
 		</div>
 		<div class="flexitem">
-			<img src="img/lockscreen.png" alt="">
+			<img src="img/index/softdev.png" alt="">
 			<h2>Software Development</h2>
-			<p>Some text</p>
+			<p>With experience in Java, Python, C#,</p>
 		</div>
 		<div class="flexitem">
-			<img src="img/lockscreen.png" alt="">
+			<img src="img/index/blender.png" alt="">
 			<h2>3D Modeling</h2>
 			<p>
 				I have experience modeling, texturing, rigging and animating characters, and building shaders
@@ -84,12 +84,12 @@ ini_set("display_errors", 1);
 			</p>
 		</div>
 		<div class="flexitem">
-			<img src="img/lockscreen.png" alt="">
-			<h2>Audio Design</h2>
+			<img src="img/index/audiodesign.png" alt="">
+			<h2>Audio Design/Production</h2>
 			<p>Some text</p>
 		</div>
 		<div class="flexitem">
-			<img src="img/lockscreen.png" alt="">
+			<img src="img/index/videoediting.png" alt="">
 			<h2>Video Editing</h2>
 			<p>Some text</p>
 		</div>
