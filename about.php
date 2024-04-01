@@ -50,6 +50,7 @@ ini_set("display_errors", 1);
             justify-content: center;
             align-items: center;
         }
+
         .image-grid div {
             width: 100%;
             height: 100%;
@@ -58,18 +59,23 @@ ini_set("display_errors", 1);
         #img1 {
             background-image: url("img/about/img1.png");
             background-size: cover;
+            background-position: center;
             grid-column: 1 / 2;
             grid-row: 1 / 3;
         }
+
         #img2 {
             background-image: url("img/about/img2.png");
             background-size: cover;
+            background-position: center;
             grid-column: 2 / 3;
             grid-row: 1 / 2;
         }
+
         #img3 {
             background-image: url("img/about/img3.png");
             background-size: cover;
+            background-position: center;
             grid-column: 2 / 3;
             grid-row: 2 / 3;
         }
@@ -78,6 +84,16 @@ ini_set("display_errors", 1);
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+
+        @media screen and (max-width: 800px) {
+            .body-flex {
+                flex-direction: column;
+            }
+
+            .body-flex>div {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -90,7 +106,7 @@ ini_set("display_errors", 1);
             <a href="contact.php">Contact</a>
             <a href="gallery.php">Gallery</a>
         </nav>
-        <h4>Nephin Media | Gallery</h4>
+        <h4>Nephin Media | About</h4>
         <div class="logonav">
             <img src="img/nephin_transp.png" height="50px" alt="">
         </div>
