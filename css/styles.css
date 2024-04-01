@@ -1,9 +1,12 @@
 /* Import variable Fredoka font from file */
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+/* Import variable DM Sans font from file */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 /* TOP BAR STYLING */
 /* Styling for the header */
 header {
+    font-family: "Fredoka One", cursive;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -71,7 +74,7 @@ nav a:hover {
 
 /* Whole page styling */
 body {
-    font-family: "Fredoka One", cursive;
+    font-family: "DM Sans", sans-serif;
     margin: 0;
 }
 
@@ -81,7 +84,7 @@ body {
     font-size: 1.2em;
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    left: 10px;
 }
 
 /* Style the main image container on index.php */
