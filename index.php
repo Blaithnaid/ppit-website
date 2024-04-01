@@ -62,32 +62,35 @@ ini_set("display_errors", 1);
 	<div class=flexcontent>
 		<div class="flexitem">
 			<img src="img/lockscreen.png" alt="">
-			<h2>Heading 1</h2>
+			<h2>Photography</h2>
 			<p>Some text</p>
 		</div>
 		<div class="flexitem">
 			<img src="img/lockscreen.png" alt="">
-			<h2>Heading 2</h2>
+			<h2>Web Design</h2>
 			<p>Some text</p>
 		</div>
 		<div class="flexitem">
 			<img src="img/lockscreen.png" alt="">
-			<h2>Heading 3</h2>
+			<h2>Software Development</h2>
 			<p>Some text</p>
 		</div>
 		<div class="flexitem">
 			<img src="img/lockscreen.png" alt="">
-			<h2>Heading 4</h2>
+			<h2>3D Modeling</h2>
+			<p>
+				I have experience modeling, texturing, rigging and animating characters, and building shaders
+				- 3D Modeling really appeals to me, and I'm looking to expand my knowledge in this area.
+			</p>
+		</div>
+		<div class="flexitem">
+			<img src="img/lockscreen.png" alt="">
+			<h2>Audio Design</h2>
 			<p>Some text</p>
 		</div>
 		<div class="flexitem">
 			<img src="img/lockscreen.png" alt="">
-			<h2>Heading 5</h2>
-			<p>Some text</p>
-		</div>
-		<div class="flexitem">
-			<img src="img/lockscreen.png" alt="">
-			<h2>Heading 6</h2>
+			<h2>Video Editing</h2>
 			<p>Some text</p>
 		</div>
 	</div>
