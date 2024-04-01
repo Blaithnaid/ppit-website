@@ -33,9 +33,7 @@ if (isset($_SESSION["user_id"])) {
 		body {
 			margin: 0;
 			width: 100%;
-			background: url('img/background_scaled.png');
-			background-position: top center;
-			background-repeat: no-repeat;
+			background: url('img/background_scaled.png') no-repeat center fixed;
 			background-size: cover;
 		}
 	</style>
