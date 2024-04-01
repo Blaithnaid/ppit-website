@@ -41,7 +41,6 @@ ini_set("display_errors", 1);
             margin: 0;
             width: 50%;
             height: 100%;
-            border: 3px dashed red;
         }
 
         .image-grid {
@@ -55,18 +54,22 @@ ini_set("display_errors", 1);
             width: 100%;
             height: 100%;
         }
+
         #img1 {
-            background-color: green;
+            background-image: url("img/about/img1.png");
+            background-size: cover;
             grid-column: 1 / 2;
             grid-row: 1 / 3;
         }
         #img2 {
-            background-color: blue;
+            background-image: url("img/about/img2.png");
+            background-size: cover;
             grid-column: 2 / 3;
             grid-row: 1 / 2;
         }
         #img3 {
-            background-color: yellow;
+            background-image: url("img/about/img3.png");
+            background-size: cover;
             grid-column: 2 / 3;
             grid-row: 2 / 3;
         }
@@ -80,7 +83,6 @@ ini_set("display_errors", 1);
 </head>
 
 <body>
-    <!-- <div id="logogradient"></div> -->
     <header>
         <nav>
             <a href="index.php">Home</a>
