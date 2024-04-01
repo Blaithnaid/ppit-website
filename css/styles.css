@@ -127,17 +127,17 @@ body {
 }
 
 .flexitem {
-    min-height: 280px;
+    flex-basis: 40%;
     flex-wrap: wrap;
     min-width: 40%;
     margin: 20px;
-    padding: 20px;
     text-align: center;
     background-color: #f2f2f2;
     border: 1px solid black;
 }
 
 .flexitem img {
-    width: 380px;
-    height: auto;
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
 }
