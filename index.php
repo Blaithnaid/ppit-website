@@ -11,7 +11,6 @@ ini_set("display_errors", 1);
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<style>
-		
 		.flexcontent {
 			margin: 0 auto;
 			margin-top: 15px;
@@ -23,6 +22,11 @@ ini_set("display_errors", 1);
 			align-items: center;
 			height: 100%;
 		}
+
+		header {
+			background-color: transparent;
+		}
+
 		@media screen and (max-width: 800px) {
 			.flexcontent {
 				flex-direction: column;
@@ -34,7 +38,6 @@ ini_set("display_errors", 1);
 <body>
 	<div class="home_spread">
 		<header>
-			<div id="logogradient"></div>
 			<div class="logo">
 				<img src="img/nephin_transp.png" height="200px" alt="">
 			</div>
@@ -51,17 +54,17 @@ ini_set("display_errors", 1);
 			<p style="font-size: 0.8em; margin-top: 30px;">↓ Scroll down to learn more about me.</p>
 		</div>
 		<?php if (isset($_SESSION["user_id"])) {
-      echo "<div class='logoutbutton'><a href='logout.php'>Log out</a></div>";
-  } else {
-      echo "<div class='loginbutton'><a href='login.php'>Log in</a></div>";
-  } ?>
+			echo "<div class='logoutbutton'><a href='logout.php'>Log out</a></div>";
+		} else {
+			echo "<div class='loginbutton'><a href='login.php'>Log in</a></div>";
+		} ?>
 	</div>
 	<div class="spread_separator">
 		If you're looking to talk to me, head straight over to the <a href="contact.php">Contact</a> page!
 	</div>
 	<div class=flexcontent>
 		<div class="flexitem">
-			<img src="img/lockscreen.png" alt="">
+			<img src="img/index/photography.png" alt="">
 			<h2>Photography</h2>
 			<p>Some text</p>
 		</div>
