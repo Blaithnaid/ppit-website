@@ -38,7 +38,7 @@ ini_set("display_errors", 1);
 
         main>div {
             flex-basis: 50%;
-        }   
+        }
 
         .image-grid {
             display: grid;
@@ -97,16 +97,16 @@ ini_set("display_errors", 1);
             <a href="contact.php">Contact</a>
             <a href="gallery.php">Gallery</a>
         </nav>
-        <h4>Nephin Media | About</h4>
+        <h3>Nephin Media | About</h3>
         <div class="logonav">
-            <img src="img/nephin_transp.png" height="50px" alt="">
+            <img src="img/nephin_transp.png" height="60px" alt="">
         </div>
     </header>
     <main>
         <div class="image-grid">
-            <img src="img/about/img1.png" id="img1">
-            <img src="img/about/img2.png" id="img2">
-            <img src="img/about/img3.png" id="img3">
+            <img src="img/about/img1.png" id="img1" alt="Code in an IDE">
+            <img src="img/about/img2.png" id="img2" alt="A 3D Model in Blender">
+            <img src="img/about/img3.png" id="img3" alt="An Adobe Premiere project">
         </div>
         <div class="text-flex">
             <h1>About Nephin Media</h1>
