@@ -11,17 +11,7 @@ ini_set("display_errors", 1);
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<style>
-		.flexcontent {
-			margin: 0 auto;
-			margin-top: 15px;
-			width: 100%;
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			height: 100%;
-		}
+		
 
 		header {
 			background-color: transparent;
