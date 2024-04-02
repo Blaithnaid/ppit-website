@@ -16,7 +16,7 @@ function createConnection()
 
 function redirectLogin()
 {
-if (!isset($_SESSION["user_id"])) {
+    if (!isset($_SESSION["user_id"])) {
         $_SESSION["noCredentials"] = "yes";
         header("Location: login.php");
         exit();
