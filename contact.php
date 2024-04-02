@@ -16,12 +16,7 @@ ini_set("display_errors", 1);
             display: inline;
         }
         header {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            align-items: center;
             padding: 10px;
-            background-color: #f2f2f2;
         }
         header nav {
             margin-right: 15px;
@@ -30,7 +25,6 @@ ini_set("display_errors", 1);
 </head>
 
 <body>
-    <!-- <div id="logogradient"></div> -->
    <header>
         <nav>
             <a href="index.php">Home</a>
@@ -43,6 +37,17 @@ ini_set("display_errors", 1);
             <img src="img/nephin_transp.png" height="60px" alt="">
         </div>
     </header>
+    <main>
+        <form action="contact.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
 </body>
 
 </html>
