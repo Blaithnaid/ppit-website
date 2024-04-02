@@ -22,77 +22,68 @@ ini_set("display_errors", 1);
             justify-content: space-between;
             align-items: center;
             padding: 10px;
-            background-color: #f2f2f2;
         }
 
         header nav {
             margin-right: 15px;
         }
 
-        .body-flex {
+        main {
             display: flex;
             flex-direction: row;
-            align-items: flex-start;
             justify-content: center;
-            height: 100vh;
+            align-items: stretch;
+            /* Add this line */
         }
 
-        .body-flex>div {
-            margin: 0;
-            width: 50%;
-            height: 100%;
-        }
+        main>div {
+            flex-basis: 50%;
+        }   
 
         .image-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
+            gap: 15px;
+            margin: 10px;
             justify-content: center;
-            align-items: center;
+            align-items: stretch;
+            height: 100vh;
+            flex-basis: 60%;
         }
 
-        .image-grid div {
+        .image-grid img {
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px grey;
+            height: auto;
             width: 100%;
-            height: 100%;
+            object-fit: cover;
         }
 
         #img1 {
-            background-image: url("img/about/img1.png");
-            background-size: cover;
-            background-position: center;
-            grid-column: 1 / 2;
-            grid-row: 1 / 3;
+            grid-area: 1 / 1 / 3 / 2;
         }
-
         #img2 {
-            background-image: url("img/about/img2.png");
-            background-size: cover;
-            background-position: center;
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
+            grid-area: 1 / 2 / 2 / 3;
         }
-
         #img3 {
-            background-image: url("img/about/img3.png");
-            background-size: cover;
-            background-position: center;
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
+            grid-area: 2 / 2 / 3 / 3;
         }
 
         .text-flex {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-basis: 40%;
+            background-color: lightgrey;
+            padding: 10px;
         }
 
+        /* breakpoint for mobile */
         @media screen and (max-width: 800px) {
-            .body-flex {
+            main {
                 flex-direction: column;
             }
 
-            .body-flex>div {
-                width: 100%;
+            main > div {
+                flex-basis: 100%;
             }
         }
     </style>
@@ -111,11 +102,11 @@ ini_set("display_errors", 1);
             <img src="img/nephin_transp.png" height="50px" alt="">
         </div>
     </header>
-    <div class="body-flex">
+    <main>
         <div class="image-grid">
-            <div id="img1"></div>
-            <div id="img2"></div>
-            <div id="img3"></div>
+            <img src="img/about/img1.png" id="img1">
+            <img src="img/about/img2.png" id="img2">
+            <img src="img/about/img3.png" id="img3">
         </div>
         <div class="text-flex">
             <h1>About Nephin Media</h1>
@@ -123,7 +114,7 @@ ini_set("display_errors", 1);
                 websites for small businesses and individuals. We also offer a range of other services including logo
                 design, branding, and social media management.</p>
         </div>
-    </div>
+    </main>
     <footer>
         <p>&copy; Nephin Media 2021</p>
     </footer>
