@@ -15,14 +15,6 @@ ini_set("display_errors", 1);
             align-self: flex-end;
             display: inline;
         }
-        header {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            background-color: #f2f2f2;
-        }
         header nav {
             margin-right: 15px;
         }
@@ -36,7 +28,6 @@ ini_set("display_errors", 1);
 </head>
 
 <body>
-    <!-- <div id="logogradient"></div> -->
    <header>
         <nav>
             <a href="index.php">Home</a>
@@ -46,7 +37,7 @@ ini_set("display_errors", 1);
         </nav>
         <h3>Nephin Media | Gallery</h3>
         <div class="logonav">
-            <img src="img/nephin_transp.png" height="50px" alt="">
+            <img src="img/nephin_transp.png" height="60px" alt="">
         </div>
     </header>
     <div class="body-flex">
