@@ -1,6 +1,6 @@
 <?php
+include_once "functions.php";
 session_start();
-redirectLogin();
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 ?>
@@ -8,42 +8,53 @@ ini_set("display_errors", 1);
 <html>
 
 <head>
-    <title>Nephin Media | Contact</title>
+    <title>Nephin Media | Admin Dashboard</title>
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-        .logonav {
-            align-self: flex-end;
-            display: inline;
-        }
         header {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            align-items: center;
             padding: 10px;
-            background-color: #f2f2f2;
         }
+
         header nav {
             margin-right: 15px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            background-image: url("img/lockscreen.png");
+            background-position: center;
+            background-size: cover;
+        }
+        #results {
+            color: white;
         }
     </style>
 </head>
 
 <body>
-    <!-- <div id="logogradient"></div> -->
-   <header>
+    <header>
         <nav>
             <a href="index.php">Home</a>
             <a href="about.php">About</a>
             <a href="contact.php">Contact</a>
             <a href="gallery.php">Gallery</a>
         </nav>
-        <h3>Nephin Media | Contact</h3>
-        <div class="logonav">
-            <img src="img/nephin_transp.png" height="60px" alt="">
-        </div>
+        <h3>Nephin Media | Admin Dashboard</h3>
+        <img src="./img/nephin_transp.svg" height="60px" width="60px" alt="">
     </header>
+    <main>
+
+    </main>
+    <footer>
+        <p>&copy;
+            <?php echo date("Y"); ?> Nephin Media
+        </p>
+    </footer>
 </body>
 
 </html>
