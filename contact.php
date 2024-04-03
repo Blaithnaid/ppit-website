@@ -1,14 +1,25 @@
 <?php
+include_once "functions.php";
 session_start();
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn = createConnection();
-    $name = $_POST["name"];
     $email = $_POST["email"];
+    $name = $_POST["name"];
     $message = $_POST["message"];
+    $submission_type = $_POST["submission_type"];
 
-    $query = "INSERT INTO `submissions` (`name`, `email`, `message`) VALUES ('$name', '$email', '$message')";
+    $resultsText = "";
+
+    $query = "INSERT INTO `submissions` (`submission_type`, `email`, `name`, `message`) 
+    VALUES ('$submission_type', '$email', '$name', '$message')";
+
+    if ($conn->query($query) === TRUE) {
+        $resultsText = "New record created successfully!";
+    } else {
+        $resultsText = "Error: " . $query . "<br>" . $conn->error;
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -42,35 +53,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             background-position: center;
             background-size: cover;
         }
-
-        /* style the contact form */
-        form {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-content: center;
-            background-color: white;
-            margin: 0 auto;
-            width: 40%;
-            height: 60vh;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        form label {
-            display: block;
-            margin-top: 10px;
-        }
-
-        form input[type="text"],
-        form textarea {
-            width: 80%;
-            padding: 5px;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        #results {
+            color: white;
         }
     </style>
 </head>
@@ -90,20 +74,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </header>
     <main>
         <form action="contact.php" method="post">
-            <div>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-            </div>
-            <div>
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email"><br>
-            </div>
-            <label for="message">Message:</label><br>
-            <div>
-                <textarea id="message" name="message"></textarea><br>
-            </div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <label for="Submission Type">Submission Type:</label>
+                <select id="submission_type" name="submission_type">
+                    <option value="booking">Booking</option>
+                    <option value="contact">Contact</option>
+                    <option value="support">Support</option>
+                </select>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="10"></textarea>
             <input type="submit" value="Submit">
         </form>
+        <div id="results"><?php echo "<p>" . $resultsText . "</p>";?></div>
     </main>
     <footer>
         <p>&copy;
