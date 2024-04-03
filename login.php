@@ -5,22 +5,22 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
 if (isset($_SESSION["user_id"])) {
-    header("Location: index.php");
+	header("Location: index.php");
 } elseif (isset($_POST["username"]) && isset($_POST["password"])) {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-    $conn = createConnection();
-    if (!$conn) {
-        $promptText = "Connection failed: " . mysqli_connect_error();
-    }
-    if (validateUser($username, $password) === true) {
-        header("Location: index.php");
-    } else {
-        $promptText =
-            "The entered username or password is incorrect.<br>Please try again.";
-    }
+	$username = $_POST["username"];
+	$password = $_POST["password"];
+	$conn = createConnection();
+	if (!$conn) {
+		$promptText = "Connection failed: " . mysqli_connect_error();
+	}
+	if (validateUser($username, $password) === true) {
+		header("Location: index.php");
+	} else {
+		$promptText =
+			"The entered username or password is incorrect.<br>Please try again.";
+	}
 } else {
-    $promptText = "Please enter a username and password.";
+	$promptText = "Please enter a username and password.";
 }
 ?>
 <!DOCTYPE html>
@@ -41,9 +41,7 @@ if (isset($_SESSION["user_id"])) {
 </head>
 
 <body>
-	<div class="logo">
-		<img src="img/nephin_transp.png" height="120px" alt="">
-	</div>
+	<img src="img/nephin.svg" height="120px" alt="">
 	<div id="back">
 		<a href="index.php">Back to Home</a>
 	</div>

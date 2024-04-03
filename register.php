@@ -61,9 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 
 <body>
-    <div class="logo">
-        <img src="img/nephin_transp.png" height="120px" alt="">
-    </div>
+    <img src="img/nephin.svg" height="120px" alt="">
     <div id="back">
         <a href="login.php">Back to Login</a>
     </div>

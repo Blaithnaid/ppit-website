@@ -14,23 +14,24 @@ ini_set("display_errors", 1);
 		body {
 			margin: 0;
 			width: 100%;
-            max-height: 100vh;
+			max-height: 100vh;
 			background: url('img/background_scaled.png');
 			background-position: top center;
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
+
 		#successbox {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px 0 #000;
-        }
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px 0 #000;
+		}
 	</style>
 	<link rel="stylesheet" href="css/forms.css">
 </head>
@@ -40,8 +41,9 @@ ini_set("display_errors", 1);
 		<img src="img/nephin_transp.png" height="120px" alt="">
 	</div>
 	<div id="successbox">
-    	<h2>You have successfully logged in!<br>Redirecting to the home page in 3s...</h2>
-    	<?php header("refresh:3;url=index.php"); ?>
+		<h2>You have successfully created an account!<br>Redirecting to the login page in 3s...</h2>
+		<?php header("refresh:3;url=index.php"); ?>
 	</div>
 </body>
+
 </html>

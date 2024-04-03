@@ -11,13 +11,10 @@ ini_set("display_errors", 1);
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-        .logonav {
-            align-self: flex-end;
-            display: inline;
-        }
         header nav {
             margin-right: 15px;
         }
+
         #videocontainer {
             display: flex;
             justify-content: center;
@@ -28,7 +25,7 @@ ini_set("display_errors", 1);
 </head>
 
 <body>
-   <header>
+    <header>
         <nav>
             <a href="index.php">Home</a>
             <a href="about.php">About</a>
@@ -36,9 +33,7 @@ ini_set("display_errors", 1);
             <a href="gallery.php">Gallery</a>
         </nav>
         <h3>Nephin Media | Gallery</h3>
-        <div class="logonav">
-            <img src="img/nephin_transp.png" height="60px" alt="">
-        </div>
+        <img src="img/nephin.svg" height="60px" alt="">
     </header>
     <div class="body-flex">
         <div class="imagegrid">
@@ -48,7 +43,7 @@ ini_set("display_errors", 1);
                 <source src="img/logo_animated.mp4" type="video/mp4">
                 Your browser does not support the video tag.
         </div>
-    <div>
+        <div>
 </body>
 
 </html>

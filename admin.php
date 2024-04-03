@@ -30,6 +30,7 @@ ini_set("display_errors", 1);
             background-position: center;
             background-size: cover;
         }
+
         #results {
             color: white;
         }
@@ -45,7 +46,7 @@ ini_set("display_errors", 1);
             <a href="gallery.php">Gallery</a>
         </nav>
         <h3>Nephin Media | Admin Dashboard</h3>
-        <img src="./img/nephin_transp.svg" height="60px" width="60px" alt="">
+        <img src="img/nephin.svg" height="60px" width="60px" alt="">
     </header>
     <main>
 

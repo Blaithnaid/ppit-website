@@ -11,11 +11,6 @@ ini_set("display_errors", 1);
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-        .logonav {
-            align-self: flex-end;
-            display: inline;
-        }
-
         header {
             display: flex;
             flex-direction: row-reverse;
@@ -63,9 +58,11 @@ ini_set("display_errors", 1);
         #img1 {
             grid-area: 1 / 1 / 3 / 2;
         }
+
         #img2 {
             grid-area: 1 / 2 / 2 / 3;
         }
+
         #img3 {
             grid-area: 2 / 2 / 3 / 3;
         }
@@ -82,7 +79,7 @@ ini_set("display_errors", 1);
                 flex-direction: column;
             }
 
-            main > div {
+            main>div {
                 flex-basis: 100%;
             }
         }
@@ -98,9 +95,7 @@ ini_set("display_errors", 1);
             <a href="gallery.php">Gallery</a>
         </nav>
         <h3>Nephin Media | About</h3>
-        <div class="logonav">
-            <img src="img/nephin_transp.png" height="60px" alt="">
-        </div>
+        <img src="img/nephin.svg" height="60px" alt="">
     </header>
     <main>
         <div class="image-grid">

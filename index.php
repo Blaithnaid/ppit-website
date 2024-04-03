@@ -11,8 +11,6 @@ ini_set("display_errors", 1);
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<style>
-		
-
 		header {
 			background-color: transparent;
 		}

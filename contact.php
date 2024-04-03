@@ -30,11 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-        .logonav {
-            align-self: flex-end;
-            display: inline;
-        }
-
         header {
             padding: 10px;
         }
@@ -53,6 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             background-position: center;
             background-size: cover;
         }
+
         #results {
             color: white;
         }
@@ -68,27 +64,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href="gallery.php">Gallery</a>
         </nav>
         <h3>Nephin Media | Contact</h3>
-        <div class="logonav">
-            <img src="img/nephin_transp.png" height="60px" alt="">
-        </div>
+        <img src="img/nephin.svg" height="60px" alt="">
     </header>
     <main>
         <form action="contact.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email">
-                <label for="Submission Type">Submission Type:</label>
-                <select id="submission_type" name="submission_type">
-                    <option value="booking">Booking</option>
-                    <option value="contact">Contact</option>
-                    <option value="support">Support</option>
-                </select>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="10"></textarea>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <label for="Submission Type">Submission Type:</label>
+            <select id="submission_type" name="submission_type">
+                <option value="booking">Booking</option>
+                <option value="contact">Contact</option>
+                <option value="support">Support</option>
+            </select>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="10"></textarea>
             <input type="submit" value="Submit">
         </form>
-        <div id="results"><?php echo "<p>" . $resultsText . "</p>";?></div>
+        <div id="results">
+            <?php echo "<p>" . $resultsText . "</p>"; ?>
+        </div>
     </main>
     <footer>
         <p>&copy;
