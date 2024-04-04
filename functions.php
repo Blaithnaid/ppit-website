@@ -35,6 +35,8 @@ function validateUser($username, $password)
             $_SESSION['username'] = $row['username'];
             if ($row['isAdmin'] == 1) {
                 $_SESSION['isAdmin'] = true;
+            } else {
+                $_SESSION['isAdmin'] = false;
             }
             return true;
         }
