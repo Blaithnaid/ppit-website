@@ -1,4 +1,4 @@
-#loginbox {
+#login-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -10,14 +10,14 @@
     text-align: center;
 }
 
-#loginbox input {
+#login-box input {
     margin: 10px 0;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
 }
 
-#loginbox input[type="submit"] {
+#login-box input[type="submit"] {
     background: #4CAF50;
     color: white;
     border: none;

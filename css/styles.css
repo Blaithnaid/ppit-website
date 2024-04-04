@@ -73,16 +73,9 @@ body {
 }
 
 /* Style the login and logout buttons */
-.loginbutton,
-.logoutbutton {
-    font-size: 1.2em;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-}
 
 /* Style the main image container on index.php */
-.home_spread {
+.home-spread {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -96,7 +89,7 @@ body {
     background-size: cover;
 }
 
-.spread_text {
+.spread-text {
     font-size: 1.4em;
     text-align: justify;
     color: black;
@@ -107,20 +100,20 @@ body {
     padding: 0;
 }
 
-.spread_text p {
+.spread-text p {
     margin: 10px;
     padding: 0;
 }
 
-.spread_separator {
+.spread-separator {
     background-color: gray;
     bottom: 0;
     text-align: center;
-    font-size: 1.5em;
-    padding: 3%;
+    font-size: 1.25em;
+    padding: 10px;
 }
 
-.flexcontent {
+.flex-content {
     margin: 0 auto;
     margin-top: 15px;
     width: 100%;
@@ -132,11 +125,11 @@ body {
     height: 100%;
 }
 
-.flexitem {
+.flex-item {
     flex-basis: 40%;
     flex-wrap: wrap;
     min-width: 40%;
-    height: 500px;
+    height: 540px;
     margin: 20px;
     text-align: center;
     background-color: #f2f2f2;
@@ -145,53 +138,72 @@ body {
     box-shadow: 5px 5px 5px #888888;
 }
 
-.flexitem img {
+.flex-item img {
     object-fit: cover;
     width: 100%;
     height: 350px;
 }
 
+.flex-item p {
+    padding: 0 5%;
+}
+
+.context-links {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.context-links a {
+    margin: 0 5px;
+}
 /* style the contact form */
-        form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            background-color: white;
-            margin: 0 auto;
-            width: fit-content;
-            height: 60vh;
-            padding: 10px 10vh;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        form input[type="text"], textarea {
-            width: 50vh;
-            padding: 5px;
-            margin: 5px auto 10px auto;
-            /* margin-top: 5px;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0 auto;
+    width: fit-content;
+    height: 60vh;
+    padding: 10px 10vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="text"],
+textarea {
+    width: 50vh;
+    padding: 5px;
+    margin: 5px auto 10px auto;
+    /* margin-top: 5px;
             margin-bottom: 10px; */
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        form input[type="submit"] {
-            height: 40px;
-            width: 40%;
-            padding: 5px;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #4CAF50;
-            color: white;
-            font-size: 1em;
-        }
-        form select {
-            width: 80%;
-            padding: 5px;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    height: 40px;
+    width: 40%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+}
+
+.contact-form select {
+    width: 80%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
