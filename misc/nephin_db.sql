@@ -19,9 +19,9 @@ VALUES (
   ),
   (
     2,
-    'email123@email.com',
-    '$2y$10$9OOFy5W.Vz0VapyS5U.ZqujRiXnklh48Nhc3qGfdSKxLbXRH3i87m',
-    false
+    'roy',
+    '$2y$10$b/JJvOo5R9zmc5FXnjs3EOOMJoEstsyStIGQEZMgkktJPzh3DNECS',
+    true
   );
 DROP TABLE IF EXISTS `submissions`;
 CREATE TABLE `submissions` (
