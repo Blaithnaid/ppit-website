@@ -3,6 +3,7 @@ include_once "functions.php";
 session_start();
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
+$resultsText = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn = createConnection();
     $email = $_POST["email"];
@@ -10,7 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
     $submission_type = $_POST["submission_type"];
 
-    $resultsText = "";
 
     $query = "INSERT INTO `submissions` (`submission_type`, `email`, `name`, `message`) 
     VALUES ('$submission_type', '$email', '$name', '$message')";
@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <img src="img/nephin.svg" height="60px" alt="">
     </header>
     <main>
-        <form action="contact.php" method="post">
+        <form action="contact.php" method="post" class="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
             <label for="email">Email:</label>
