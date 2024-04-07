@@ -43,7 +43,12 @@ ini_set("display_errors", 1);
                 <source src="img/logo_animated.mp4" type="video/mp4">
                 Your browser does not support the video tag.
         </div>
-        <div>
+    </div>
+    <footer>
+        <p>&copy;
+            <?php echo date("Y"); ?> Nephin Media
+        </p>
+    </footer>
 </body>
 
 </html>
