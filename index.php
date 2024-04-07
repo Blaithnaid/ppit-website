@@ -20,15 +20,22 @@ ini_set("display_errors", 1);
 				flex-direction: column;
 			}
 		}
+		@media screen and (max-width: 500px) {
+			.logo {
+				width: 60px;
+				height: 60px;
+			}
+			.spread-text {
+				right: 10%;
+			}
+		}
 	</style>
 </head>
 
 <body>
 	<div class="home-spread">
 		<header>
-			<div class="logo">
-				<img src="img/nephin.svg" height="200px" alt="">
-			</div>
+			<img src="img/nephin.svg" height="200px" class="logo" alt="Website Logo">
 			<nav>
 				<a href="index.php">Home</a>
 				<a href="about.php">About</a>
@@ -104,7 +111,9 @@ ini_set("display_errors", 1);
 		</div>
 	</div>
 	<footer>
-		<p>&copy; 2024 Nephin Media</p>
+		<p>&copy;
+            <?php echo date("Y"); ?> Nephin Media
+        </p>
 	</footer>
 </body>
 
