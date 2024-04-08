@@ -20,13 +20,6 @@ ini_set("display_errors", 1);
             min-height: 75vh;
         }
 
-        #videocontainer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px;
-        }
-
         .gallery-flex {
             display: flex;
             flex-flow: row wrap;
@@ -43,7 +36,7 @@ ini_set("display_errors", 1);
             width: 300px;
             height: 300px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 5px;
         }
 
         iframe {
@@ -53,8 +46,7 @@ ini_set("display_errors", 1);
         }
 
         figcaption {
-            font-family: 'DM Sans'
-                margin-top: 0;
+            margin-top: 0;
             font-size: 0.8em;
             font-weight: bold;
             color: grey;
