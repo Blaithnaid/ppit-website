@@ -8,6 +8,7 @@ ini_set("display_errors", 1);
 
 <head>
     <title>Nephin Media | Gallery</title>
+    <link rel="stylesheet" href="img/lightbox/src/css/lightbox.css">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
@@ -15,11 +16,48 @@ ini_set("display_errors", 1);
             margin-right: 15px;
         }
 
+        .body-flex {
+            min-height: 75vh;
+        }
+
         #videocontainer {
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 20px;
+        }
+
+        .gallery-flex {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        figure {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .gallery-flex img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        iframe {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        figcaption {
+            font-family: 'DM Sans'
+                margin-top: 0;
+            font-size: 0.8em;
+            font-weight: bold;
+            color: grey;
         }
     </style>
 </head>
@@ -36,12 +74,51 @@ ini_set("display_errors", 1);
         <img src="img/nephin.svg" height="60px" alt="">
     </header>
     <div class="body-flex">
-        <div class="imagegrid">
-        </div>
-        <div id='videocontainer'>
-            <video height='400px' width='400px' autoplay>
-                <source src="img/logo_animated.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+        <div class="gallery-flex">
+            <figure>
+                <a href="img/gallery/shop-street.jpg" data-lightbox="gallery"><img src="img/gallery/shop-street.jpg"
+                        alt="Shop Street in Galway at night"></a>
+                <figcaption>Shop Street in Galway at night</figcaption>
+            </figure>
+            <figure>
+                <a href="img/gallery/salthill-sunset.jpg" data-lightbox="gallery"><img
+                        src="img/gallery/salthill-sunset.jpg" alt="Salthill in Galway at sunset"></a>
+                <figcaption>Captured on: Canon EOS 250D</figcaption>
+            </figure>
+            <figure>
+                <a href="img/gallery/misty-lake.jpg" data-lightbox="gallery"><img src="img/gallery/misty-lake.jpg"
+                        alt=""></a>
+                <figcaption>Captured on: Canon IXUS 70</figcaption>
+            </figure>
+            <figure>
+                <a href="img/gallery/ambulance.jpg" data-lightbox="gallery"><img src="img/gallery/ambulance.jpg"
+                        alt=""></a>
+                <figcaption>Captured on: Canon EOS 250D</figcaption>
+            </figure>
+            <figure>
+                <a href="img/gallery/cloudy-lake.jpg" data-lightbox="gallery"><img src="img/gallery/cloudy-lake.jpg"
+                        alt=""></a>
+                <figcaption>Captured on: Canon IXUS 70</figcaption>
+            </figure>
+            <figure>
+                <a href="img/gallery/salthill-night.jpg" data-lightbox="gallery"><img
+                        src="img/gallery/salthill-night.jpg" alt=""></a>
+                <figcaption>Captured on: Canon EOS 250D</figcaption>
+            </figure>
+            <figure>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lSviicQG97Q?si=VlzX3beyEvEQ2zzD"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>Short film made in Adobe Premiere</figcaption>
+            </figure>
+            <figure>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Wn0uN12Ybu0?si=B_kD9zwfhOcSkQMI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>Music Video made in Adobe Premiere</figcaption>
+            </figure>
         </div>
     </div>
     <footer>
@@ -49,6 +126,9 @@ ini_set("display_errors", 1);
             <?php echo date("Y"); ?> Nephin Media
         </p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="img/lightbox/src/js/lightbox.js"></script>
 </body>
 
 </html>
