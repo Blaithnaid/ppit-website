@@ -9,6 +9,7 @@ ini_set("display_errors", 1);
 <head>
 	<title>Nephin Media | Home</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" type="image/x-icon" href="img/icon-192x192.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<style>
 		header {
@@ -45,7 +46,7 @@ ini_set("display_errors", 1);
 		</header>
 		<div class="spread-text">
 			<p>Welcome to Nephin Media</p>
-			<p>Here is some text about the site</p>
+			<p>Multimedia production for the modern age</p>
 			<p style="font-size: 0.8em; margin-top: 30px;">↓ Scroll down to learn more about me.</p>
 		</div>
 		<div class="context-links">

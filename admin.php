@@ -27,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <title>Nephin Media | Admin Dashboard</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="img/icon-192x192.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
         header {

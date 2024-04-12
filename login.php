@@ -38,6 +38,7 @@ if (isset($_SESSION["user_id"])) {
 		}
 	</style>
 	<link rel="stylesheet" href="css/forms.css">
+	<link rel="icon" type="image/x-icon" href="img/icon-192x192.png">
 </head>
 
 <body>
@@ -45,7 +46,7 @@ if (isset($_SESSION["user_id"])) {
 	<div id="back">
 		<a href="index.php">Back to Home</a>
 	</div>
-	<div id="loginbox">
+	<div id="login-box">
 		<h1>Login</h1>
 		<p>
 			<?php echo $promptText; ?>
