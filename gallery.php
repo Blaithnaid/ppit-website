@@ -10,6 +10,7 @@ ini_set("display_errors", 1);
     <title>Nephin Media | Gallery</title>
     <link rel="stylesheet" href="img/lightbox/src/css/lightbox.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="img/icon-192x192.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
         header nav {
@@ -17,7 +18,7 @@ ini_set("display_errors", 1);
         }
 
         .body-flex {
-            min-height: 75vh;
+            width: 100%;
         }
 
         .gallery-flex {
@@ -28,28 +29,35 @@ ini_set("display_errors", 1);
         }
 
         figure {
+            flex-basis: 40%;
             margin: 10px;
             text-align: center;
         }
 
-        .gallery-flex img {
-            width: 300px;
-            height: 300px;
+        figure img {
+            aspect-ratio: 4/3;
+            width: 100%;
+            height: 2fr;
             object-fit: cover;
-            border-radius: 5px;
-        }
-
-        iframe {
-            width: 300px;
-            height: 300px;
             border-radius: 10px;
         }
 
         figcaption {
-            margin-top: 0;
             font-size: 0.8em;
-            font-weight: bold;
-            color: grey;
+            color: #666;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 4/3;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 800px) {
+            figure {
+                flex-basis: 90%;
+            }
         }
     </style>
 </head>
@@ -70,7 +78,7 @@ ini_set("display_errors", 1);
             <figure>
                 <a href="img/gallery/shop-street.jpg" data-lightbox="gallery"><img src="img/gallery/shop-street.jpg"
                         alt="Shop Street in Galway at night"></a>
-                <figcaption>Shop Street in Galway at night</figcaption>
+                <figcaption>Captured on: Canon EOS 250D</figcaption>
             </figure>
             <figure>
                 <a href="img/gallery/salthill-sunset.jpg" data-lightbox="gallery"><img
