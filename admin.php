@@ -25,6 +25,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2Y2F7J741"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-J2Y2F7J741');
+    </script>
+
     <title>Nephin Media | Admin Dashboard</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="img/icon-192x192.png">
@@ -69,24 +79,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             border-spacing: 0;
             border: 1px solid black;
         }
+
         th {
             /* text-align: left; */
             background-color: #f2f2f2;
         }
-        tr, th, td {
+
+        tr,
+        th,
+        td {
             border: 1px solid black;
             padding: 10px 5px;
         }
+
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+
         tr:nth-child(odd) {
             background-color: #f5f5f5;
         }
+
         tr:hover {
             background-color: #f5f5f5;
         }
-
     </style>
 </head>
 

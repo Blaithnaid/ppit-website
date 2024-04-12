@@ -7,6 +7,16 @@ ini_set("display_errors", 1);
 <html>
 
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J2Y2F7J741"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-J2Y2F7J741');
+	</script>
+
 	<title>Nephin Media | Home</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="icon" type="image/x-icon" href="img/icon-192x192.png">
@@ -21,11 +31,13 @@ ini_set("display_errors", 1);
 				flex-direction: column;
 			}
 		}
+
 		@media screen and (max-width: 500px) {
 			.logo {
 				width: 60px;
 				height: 60px;
 			}
+
 			.spread-text {
 				right: 10%;
 			}
@@ -75,7 +87,8 @@ ini_set("display_errors", 1);
 			<img src="img/index/webdesign.png" alt="">
 			<h2>Web Design</h2>
 			<p>
-				I built this website! I've worked with HTML, CSS, JS, PHP, and databases to create a variety of websites,
+				I built this website! I've worked with HTML, CSS, JS, PHP, and databases to create a variety of
+				websites,
 				both for clients and personal projects. I'm also familiar with WordPress and Wix.
 			</p>
 		</div>
@@ -113,8 +126,8 @@ ini_set("display_errors", 1);
 	</div>
 	<footer>
 		<p>&copy;
-            <?php echo date("Y"); ?> Nephin Media
-        </p>
+			<?php echo date("Y"); ?> Nephin Media
+		</p>
 	</footer>
 </body>
 

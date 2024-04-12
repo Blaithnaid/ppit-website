@@ -8,6 +8,16 @@ ini_set("display_errors", 1);
 <html>
 
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J2Y2F7J741"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-J2Y2F7J741');
+	</script>
+
 	<title>Nephin Media | Success!</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="icon" type="image/x-icon" href="img/icon-192x192.png">

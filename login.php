@@ -27,6 +27,16 @@ if (isset($_SESSION["user_id"])) {
 <html>
 
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J2Y2F7J741"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-J2Y2F7J741');
+	</script>
+
 	<title>Nephin Media | Login</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<style>
