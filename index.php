@@ -49,7 +49,7 @@ ini_set("display_errors", 1);
 	<div class="home-spread">
 		<header>
 			<img src="img/nephin.svg" height="200px" class="logo" alt="Website Logo">
-			<nav>
+			<nav style="margin-right: 0;">
 				<a href="index.php">Home</a>
 				<a href="about.php">About</a>
 				<a href="contact.php">Contact</a>
