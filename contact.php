@@ -41,27 +41,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="icon" type="image/x-icon" href="img/icon-192x192.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-        header {
-            padding: 10px;
-        }
-
-        header nav {
-            margin-right: 15px;
-        }
-
         main {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: url(img/lockscreen.png) no-repeat center center/cover;
+            text-align: center;
+        }
+
+        .contact-form {
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.7);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 80vh;
-            background-image: url("img/lockscreen.png");
-            background-position: center;
-            background-size: cover;
+            width: 600px;
+            margin: 0 auto;
         }
 
-        #results {
-            color: white;
+        .contact-form label {
+            margin-top: 10px;
+            font-size: 1.2em;
+            text-decoration: underline;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            margin-top: 5px;
+            width: 80%;
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        .contact-form textarea {
+            height: 200px;
         }
     </style>
 </head>
@@ -79,19 +96,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </header>
     <main>
         <form action="contact.php" method="post" class="contact-form">
-            <label for="name">Name:</label>
+            <h2>Contact Us</h2>
+            <p>
+                Need to find out some more about what I could do for you?
+                Need help with something? Send me a message!
+            </p>
+            <label for="name"><b>Name*:</b></label>
             <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
+            <label for="email"><b>Email*:</b></label>
             <input type="text" id="email" name="email">
-            <label for="Submission Type">Submission Type:</label>
+            <label for="Submission Type"><b>Submission Type:</b></label>
             <select id="submission_type" name="submission_type">
                 <option value="booking">Booking</option>
                 <option value="contact">Contact</option>
                 <option value="support">Support</option>
             </select>
-            <label for="message">Message:</label>
+            <label for="message"><b>Message*:</b></label>
             <textarea id="message" name="message" rows="10"></textarea>
             <input type="submit" value="Submit">
+            <p>Required fields are marked with an asterisk (*).</p>
         </form>
         <div id="results">
             <?php echo "<p>" . $resultsText . "</p>"; ?>
