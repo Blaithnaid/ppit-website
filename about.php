@@ -22,18 +22,6 @@ ini_set("display_errors", 1);
     <link rel="icon" type="image/x-icon" href="img/icon-192x192.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-        header {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-
-        header nav {
-            margin-right: 15px;
-        }
-
         main {
             display: flex;
             flex-direction: row;
