@@ -16,11 +16,15 @@ header {
     text-align: center;
 }
 
-header h2 {
-    font-size: 2em;
+header h3 {
+    font-size: 1.6em;
     margin: 0;
     padding: 0;
     justify-self: center;
+}
+
+header nav {
+    margin-right: 15px;
 }
 
 /* footer styling */
@@ -167,52 +171,9 @@ body {
     bottom: 10px;
     left: 10px;
 }
+
 .context-links a {
     margin: 0 5px;
 }
+
 /* style the contact form */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background-color: white;
-    margin: 0 auto;
-    width: fit-content;
-    height: 60vh;
-    padding: 10px 10vh;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form input[type="text"],
-textarea {
-    width: 50vh;
-    padding: 5px;
-    margin: 5px auto 10px auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form input[type="submit"] {
-    height: 40px;
-    width: 40%;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 1em;
-}
-
-.contact-form select {
-    width: 80%;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
