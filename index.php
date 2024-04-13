@@ -30,6 +30,9 @@ ini_set("display_errors", 1);
 			.flexcontent {
 				flex-direction: column;
 			}
+			.flex-item {
+				flex-basis: 100%;
+			}
 		}
 
 		@media screen and (max-width: 500px) {
@@ -41,6 +44,11 @@ ini_set("display_errors", 1);
 			.spread-text {
 				right: 10%;
 			}
+		}
+
+		.flex-content {
+			background: rgb(47, 51, 75);
+			background: linear-gradient(0deg, rgba(47, 51, 75, 1) 14%, rgba(255, 255, 255, 1) 62%);
 		}
 	</style>
 </head>
@@ -57,8 +65,8 @@ ini_set("display_errors", 1);
 			</nav>
 		</header>
 		<div class="spread-text">
-			<p>Welcome to Nephin Media</p>
-			<p>Multimedia production for the modern age</p>
+			<h4>Welcome to Nephin Media</h4>
+			<h4>Multimedia production for the modern age.</h4>
 			<p style="font-size: 0.8em; margin-top: 30px;">↓ Scroll down to learn more about me.</p>
 		</div>
 		<div class="context-links">
