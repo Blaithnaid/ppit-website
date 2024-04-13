@@ -34,6 +34,19 @@ ini_set("display_errors", 1);
             flex-basis: 50%;
         }
 
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.4em;
+        }
+
         .image-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -69,7 +82,7 @@ ini_set("display_errors", 1);
         .text-flex {
             flex-basis: 40%;
             background-color: lightgrey;
-            padding: 10px;
+            padding: 10px 2%;
         }
 
         /* breakpoint for mobile */
@@ -104,9 +117,38 @@ ini_set("display_errors", 1);
         </div>
         <div class="text-flex">
             <h1>About Nephin Media</h1>
-            <p>Nephin Media is a small web development company based in the west of Ireland. We specialise in creating
-                websites for small businesses and individuals. We also offer a range of other services including logo
-                design, branding, and social media management.</p>
+            <p>
+            <section>
+                <h2>Who are we?</h2>
+                <p>
+                    Nephin Media is the product of me - Iarla Sparrow Burke. Raised in a strongly tech-literate
+                    household,and carrying a passion for technology and media, I'm looking to bring my skills in the 
+                    fields I'm passionate about to those who need them.
+                </p>
+            </section>
+            <section>
+                <h2>What do we do?</h2>
+                <p>
+                    Nephin Media is a multimedia production company, specialising in web development, 3D modelling, and
+                    video editing. I'm here to help you bring your ideas to life, whether it's a website, a 3D model, 
+                    or a video project.
+                </p>
+            </section>
+            <section>
+                <h2>Why choose us?</h2>
+                <p>
+                    Nephin Media is a small, independent company, meaning that I can offer a personal touch to my 
+                    services. I'm dedicated to providing the best possible service to our clients, and always 
+                    looking to improve my skills and services.
+                </p>
+            </section>
+            <section>
+                <h2>Now, how can we help?</h2>
+                <p>
+                    If you're interested in working with me, or if you have any questions, feel free to get in touch 
+                    with me via the <a href="contact.php">Contact</a> page, or at <a href="mailto:iarla@nephin.me">iarla@nephin.me</a>. We're always happy to help, and we're 
+                    looking forward to working with you!
+                </p>
         </div>
     </main>
     <footer>
