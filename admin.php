@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
-            height: 80vh;
+            height: 100vh;
             background-image: url("img/lockscreen.png");
             background-position: center;
             background-size: cover;
@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         th,
         td {
             border: 1px solid black;
-            padding: 10px 5px;
+            padding: 10px 10px;
         }
 
         tr:nth-child(even) {
