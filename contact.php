@@ -11,14 +11,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
     $submission_type = $_POST["submission_type"];
 
-
-    $query = "INSERT INTO `submissions` (`submission_type`, `email`, `name`, `message`) 
-    VALUES ('$submission_type', '$email', '$name', '$message')";
-
-    if ($conn->query($query) === TRUE) {
-        $resultsText = "New record created successfully!";
+    // check if any fields are empty
+    if (empty($email) || empty($name) || empty($message)) {
+        $resultsText = "Please fill in all required fields.";
     } else {
-        $resultsText = "Error: " . $query . "<br>" . $conn->error;
+        $query = "INSERT INTO `submissions` (`submission_type`, `email`, `name`, `message`) 
+        VALUES ('$submission_type', '$email', '$name', '$message')";
+
+        if ($conn->query($query) === TRUE) {
+            $resultsText = "New record created successfully!";
+        } else {
+            $resultsText = "Error: " . $query . "<br>" . $conn->error;
+        }
     }
 }
 ?>
@@ -51,6 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             text-align: center;
         }
 
+        /* contact form */
         .contact-form {
             padding: 20px;
             border-radius: 10px;
@@ -88,28 +93,48 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 padding: 20px;
             }
 
+            header h3 {
+                font-size: 1.2em;
+            }
+
             .contact-form {
                 width: 90%;
             }
 
-            .contact-form input, .contact-form select, .contact-form textarea {
+            .contact-form input,
+            .contact-form select,
+            .contact-form textarea {
                 width: 100%;
             }
         }
     </style>
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <div class="hamburger-toggle" onclick="toggleMenu()">
+            <img src="img/icons8-hamburger-menu.svg" alt="">
+        </div>
+        <nav id="nav">
             <a href="index.php">Home</a>
             <a href="about.php">About</a>
             <a href="contact.php">Contact</a>
             <a href="gallery.php">Gallery</a>
         </nav>
+
+
         <h3>Nephin Media | Contact</h3>
-        <img src="img/nephin.svg" height="60px" alt="">
+        <img src="img/nephin.svg" class="logo-small" alt="Website logo">
     </header>
+
+    <nav class="hamburger-menu" id="hamburger-menu" style="display: none;">
+        <a href="index.php">•Home</a>
+        <a href="about.php">•About</a>
+        <a href="contact.php">•Contact</a>
+        <a href="gallery.php">•Gallery</a>
+    </nav>
+
     <main>
         <form action="contact.php" method="post" class="contact-form">
             <h2>Contact Us</h2>
@@ -118,17 +143,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 Need help with something? Send me a message!
             </p>
             <label for="name"><b>Name*:</b></label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" required>
             <label for="email"><b>Email*:</b></label>
-            <input type="text" id="email" name="email">
+            <input type="text" id="email" name="email" required>
             <label for="Submission Type"><b>Submission Type:</b></label>
-            <select id="submission_type" name="submission_type">
+            <select id="submission_type" name="submission_type" required>
                 <option value="booking">Booking</option>
                 <option value="contact">Contact</option>
                 <option value="support">Support</option>
             </select>
             <label for="message"><b>Message*:</b></label>
-            <textarea id="message" name="message" rows="10"></textarea>
+            <textarea id="message" name="message" rows="10" required></textarea>
             <input type="submit" value="Submit">
             <p>Required fields are marked with an asterisk (*).</p>
         </form>
@@ -141,6 +166,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php echo date("Y"); ?> Nephin Media
         </p>
     </footer>
+    <script type="text/javascript" src="js/functions.js"></script>
 </body>
 
 </html>
