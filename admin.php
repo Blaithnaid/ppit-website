@@ -81,7 +81,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         th {
-            /* text-align: left; */
             background-color: #f2f2f2;
         }
 
@@ -92,16 +91,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             padding: 10px 10px;
         }
 
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        tr:nth-child(odd) {
-            background-color: #f5f5f5;
-        }
-
+        tr:nth-child(even),
+        tr:nth-child(odd),
         tr:hover {
             background-color: #f5f5f5;
+        }
+
+        @media screen and (max-width: 800px) {
+            main {
+                flex-direction: column;
+            }
+
+            main div {
+                flex-basis: 90%;
+                max-width: 90%;
+                margin: 10px;
+            }
+
         }
     </style>
     <link rel="stylesheet" href="css/menu.css">
