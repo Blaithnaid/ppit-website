@@ -70,6 +70,11 @@ nav a:hover {
     top: 0;
     left: 0;
     padding: 15px;
+    transition: transform .7s ease-in-out; /* Add a transition effect */
+}
+
+.logo:hover {
+    transform: rotate(360deg); /* Rotate logo on hover */
 }
 
 /* Whole page styling */
