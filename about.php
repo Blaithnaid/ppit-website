@@ -43,7 +43,7 @@ ini_set("display_errors", 1);
         }
 
         p {
-            font-size: 1.2  em;
+            font-size: 1.2 em;
         }
 
         .image-grid {
@@ -95,11 +95,15 @@ ini_set("display_errors", 1);
             }
         }
     </style>
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <div class="hamburger-toggle" onclick="toggleMenu()">
+            <img src="img/icons8-hamburger-menu.svg" alt="">
+        </div>
+        <nav id="nav">
             <a href="index.php">Home</a>
             <a href="about.php">About</a>
             <a href="contact.php">Contact</a>
@@ -108,6 +112,14 @@ ini_set("display_errors", 1);
         <h3>Nephin Media | About</h3>
         <img src="img/nephin.svg" class="logo-small" alt="Website logo">
     </header>
+
+    <nav class="hamburger-menu" id="hamburger-menu" style="display: none;">
+        <a href="index.php">•Home</a>
+        <a href="about.php">•About</a>
+        <a href="contact.php">•Contact</a>
+        <a href="gallery.php">•Gallery</a>
+    </nav>
+
     <main>
         <div class="image-grid">
             <img src="img/about/img1.png" id="img1" alt="Code in an IDE">
@@ -152,8 +164,11 @@ ini_set("display_errors", 1);
         </div>
     </main>
     <footer>
-        <p>&copy; Nephin Media 2021</p>
+        <p>&copy;
+            <?php echo date("Y"); ?> Nephin Media
+        </p>
     </footer>
+    <script type="text/javascript" src="js/functions.js"></script>
 </body>
 
 </html>

@@ -104,19 +104,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             background-color: #f5f5f5;
         }
     </style>
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <div class="hamburger-toggle" onclick="toggleMenu()">
+            <img src="img/icons8-hamburger-menu.svg" alt="">
+        </div>
+        <nav id="nav">
             <a href="index.php">Home</a>
             <a href="about.php">About</a>
             <a href="contact.php">Contact</a>
             <a href="gallery.php">Gallery</a>
         </nav>
-        <h3>Nephin Media | Admin Dashboard</h3>
+        <h3>Nephin Media | About</h3>
         <img src="img/nephin.svg" class="logo-small" alt="Website logo">
     </header>
+
+    <nav class="hamburger-menu" id="hamburger-menu" style="display: none;">
+        <a href="index.php">•Home</a>
+        <a href="about.php">•About</a>
+        <a href="contact.php">•Contact</a>
+        <a href="gallery.php">•Gallery</a>
+    </nav>
+
     <main>
         <div id="results">
             <h1>Submissions</h1>
@@ -177,6 +189,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php echo date("Y"); ?> Nephin Media
         </p>
     </footer>
+    <script type="text/javascript" src="js/functions.js"></script>
 </body>
 
 </html>

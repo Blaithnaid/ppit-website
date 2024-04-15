@@ -75,12 +75,17 @@ ini_set("display_errors", 1);
 
 <body>
     <header>
-        <nav>
+        <div class="hamburger-toggle" onclick="toggleMenu()">
+            <img src="img/icons8-hamburger-menu.svg" alt="">
+        </div>
+        <nav id="nav">
             <a href="index.php">Home</a>
             <a href="about.php">About</a>
             <a href="contact.php">Contact</a>
             <a href="gallery.php">Gallery</a>
         </nav>
+
+
         <h3>Nephin Media | Gallery</h3>
         <img src="img/nephin.svg" class="logo-small" alt="Website logo">
     </header>
