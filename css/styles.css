@@ -77,6 +77,16 @@ nav a:hover {
     transform: rotate(360deg); /* Rotate logo on hover */
 }
 
+.logo-small {
+    height: 60px;
+    width: 60px;
+    transition: transform .7s ease-in-out; /* Add a transition effect */
+}
+
+.logo-small:hover {
+    transform: rotate(360deg); /* Rotate logo on hover */
+}
+
 /* Whole page styling */
 body {
     font-family: "DM Sans", sans-serif;
