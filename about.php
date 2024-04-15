@@ -105,7 +105,7 @@ ini_set("display_errors", 1);
         </div>
         <nav id="nav">
             <a href="index.php">Home</a>
-            <a href="about.php">About</a>
+            <a href="about.php"><u>About</u></a>
             <a href="contact.php">Contact</a>
             <a href="gallery.php">Gallery</a>
         </nav>
@@ -115,7 +115,7 @@ ini_set("display_errors", 1);
 
     <nav class="hamburger-menu" id="hamburger-menu" style="display: none;">
         <a href="index.php">•Home</a>
-        <a href="about.php">•About</a>
+        <a href="about.php">•<u>About</u></a>
         <a href="contact.php">•Contact</a>
         <a href="gallery.php">•Gallery</a>
     </nav>

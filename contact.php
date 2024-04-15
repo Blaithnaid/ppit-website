@@ -119,7 +119,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <nav id="nav">
             <a href="index.php">Home</a>
             <a href="about.php">About</a>
-            <a href="contact.php">Contact</a>
+            <a href="contact.php"><u>Contact</u></a>
             <a href="gallery.php">Gallery</a>
         </nav>
 
@@ -131,7 +131,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <nav class="hamburger-menu" id="hamburger-menu" style="display: none;">
         <a href="index.php">•Home</a>
         <a href="about.php">•About</a>
-        <a href="contact.php">•Contact</a>
+        <a href="contact.php">•<u>Contact</u></a>
         <a href="gallery.php">•Gallery</a>
     </nav>
 

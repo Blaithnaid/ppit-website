@@ -82,7 +82,7 @@ ini_set("display_errors", 1);
             <a href="index.php">Home</a>
             <a href="about.php">About</a>
             <a href="contact.php">Contact</a>
-            <a href="gallery.php">Gallery</a>
+            <a href="gallery.php"><u>Gallery</u></a>
         </nav>
 
 
@@ -94,7 +94,7 @@ ini_set("display_errors", 1);
         <a href="index.php">•Home</a>
         <a href="about.php">•About</a>
         <a href="contact.php">•Contact</a>
-        <a href="gallery.php">•Gallery</a>
+        <a href="gallery.php">•<u>Gallery</u></a>
     </nav>
 
     <div class="body-flex">
