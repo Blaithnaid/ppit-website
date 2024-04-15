@@ -42,7 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
         main {
-            height: 100vh;
+            height: 100%;
+            padding: 50px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -79,6 +80,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         .contact-form textarea {
             height: 200px;
+        }
+
+        /* mobile breakpoints */
+        @media screen and (max-width: 800px) {
+            main {
+                padding: 20px;
+            }
+
+            .contact-form {
+                width: 90%;
+            }
+
+            .contact-form input, .contact-form select, .contact-form textarea {
+                width: 100%;
+            }
         }
     </style>
 </head>
