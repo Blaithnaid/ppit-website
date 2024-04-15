@@ -27,7 +27,6 @@ ini_set("display_errors", 1);
             flex-direction: row;
             justify-content: center;
             align-items: stretch;
-            /* Add this line */
         }
 
         main>div {
@@ -44,7 +43,7 @@ ini_set("display_errors", 1);
         }
 
         p {
-            font-size: 1.4em;
+            font-size: 1.2  em;
         }
 
         .image-grid {
@@ -122,7 +121,7 @@ ini_set("display_errors", 1);
                 <h2>Who are we?</h2>
                 <p>
                     Nephin Media is the product of me - Iarla Sparrow Burke. Raised in a strongly tech-literate
-                    household,and carrying a passion for technology and media, I'm looking to bring my skills in the 
+                    household,and carrying a passion for technology and media, I'm looking to bring my skills in the
                     fields I'm passionate about to those who need them.
                 </p>
             </section>
@@ -130,23 +129,24 @@ ini_set("display_errors", 1);
                 <h2>What do we do?</h2>
                 <p>
                     Nephin Media is a multimedia production company, specialising in web development, 3D modelling, and
-                    video editing. I'm here to help you bring your ideas to life, whether it's a website, a 3D model, 
+                    video editing. I'm here to help you bring your ideas to life, whether it's a website, a 3D model,
                     or a video project.
                 </p>
             </section>
             <section>
                 <h2>Why choose us?</h2>
                 <p>
-                    Nephin Media is a small, independent company, meaning that I can offer a personal touch to my 
-                    services. I'm dedicated to providing the best possible service to our clients, and always 
+                    Nephin Media is a small, independent company, meaning that I can offer a personal touch to my
+                    services. I'm dedicated to providing the best possible service to our clients, and always
                     looking to improve my skills and services.
                 </p>
             </section>
             <section>
                 <h2>Now, how can we help?</h2>
                 <p>
-                    If you're interested in working with me, or if you have any questions, feel free to get in touch 
-                    with me via the <a href="contact.php">Contact</a> page, or at <a href="mailto:iarla@nephin.me">iarla@nephin.me</a>. We're always happy to help, and we're 
+                    If you're interested in working with me, or if you have any questions, feel free to get in touch
+                    with me via the <a href="contact.php">Contact</a> page, or at <a
+                        href="mailto:iarla@nephin.me">iarla@nephin.me</a>. We're always happy to help, and we're
                     looking forward to working with you!
                 </p>
         </div>
