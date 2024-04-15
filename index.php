@@ -57,7 +57,7 @@ ini_set("display_errors", 1); // Display all errors
 <body>
 	<div class="home-spread">
 		<header>
-			<img src="img/nephin.svg" height="200px" class="logo" alt="Website Logo">
+			<img src="img/nephin.svg" height="200px" class="logo logo-small" alt="Website logo">
 			<nav style="margin-right: 0;">
 				<a href="index.php">Home</a>
 				<a href="about.php">About</a>

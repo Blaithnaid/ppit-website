@@ -70,6 +70,7 @@ ini_set("display_errors", 1);
             }
         }
     </style>
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 
 <body>
@@ -81,8 +82,16 @@ ini_set("display_errors", 1);
             <a href="gallery.php">Gallery</a>
         </nav>
         <h3>Nephin Media | Gallery</h3>
-        <img src="img/nephin.svg" height="60px" alt="">
+        <img src="img/nephin.svg" class="logo-small" alt="Website logo">
     </header>
+
+    <nav class="hamburger-menu" id="hamburger-menu" style="display: none;">
+        <a href="index.php">•Home</a>
+        <a href="about.php">•About</a>
+        <a href="contact.php">•Contact</a>
+        <a href="gallery.php">•Gallery</a>
+    </nav>
+
     <div class="body-flex">
         <div class="gallery-flex">
             <figure>
@@ -139,6 +148,7 @@ ini_set("display_errors", 1);
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="img/lightbox/src/js/lightbox.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
 </body>
 
 </html>

@@ -52,7 +52,7 @@ if (isset($_SESSION["user_id"])) {
 </head>
 
 <body>
-	<img src="img/nephin.svg" height="120px" alt="">
+	<img src="img/nephin.svg" class="logo" height="120px" alt="">
 	<div id="back">
 		<a href="index.php">Back to Home</a>
 	</div>

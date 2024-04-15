@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href="gallery.php">Gallery</a>
         </nav>
         <h3>Nephin Media | Admin Dashboard</h3>
-        <img src="img/nephin.svg" height="60px" width="60px" alt="">
+        <img src="img/nephin.svg" class="logo-small" alt="Website logo">
     </header>
     <main>
         <div id="results">

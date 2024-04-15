@@ -106,7 +106,7 @@ ini_set("display_errors", 1);
             <a href="gallery.php">Gallery</a>
         </nav>
         <h3>Nephin Media | About</h3>
-        <img src="img/nephin.svg" height="60px" alt="">
+        <img src="img/nephin.svg" class="logo-small" alt="Website logo">
     </header>
     <main>
         <div class="image-grid">
