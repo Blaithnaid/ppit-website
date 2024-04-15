@@ -126,6 +126,14 @@ body {
     padding: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .spread-text {
+        font-size: 1em;
+        bottom: 10%;
+        right: 5%;
+    }
+}
+
 .spread-separator {
     background-color: #2F334B;
     color: white;
