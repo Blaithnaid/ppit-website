@@ -23,6 +23,11 @@
     border: none;
 }
 
+#login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #45a049;
+}
+
 .logo {
     position: absolute;
     top: 0;
