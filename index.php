@@ -1,13 +1,14 @@
 <?php
-session_start();
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
+session_start(); // Start the session
+error_reporting(E_ALL); // Report all errors
+ini_set("display_errors", 1); // Display all errors
 ?>
 <!DOCTYPE html>
 <html>
 
 <head>
 	<!-- Google tag (gtag.js) -->
+	<!-- This enables the use of Google Analytics. It is present on all pages on this site. -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J2Y2F7J741"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
