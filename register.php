@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <div id="back">
         <a href="login.php">Back to Login</a>
     </div>
-    <div id="loginbox">
+    <div id="login-box">
         <h1>Create Account</h1>
         <form action="register.php" method="post">
             <label for="username">Username:</label>
