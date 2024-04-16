@@ -23,6 +23,12 @@ header h3 {
     justify-self: center;
 }
 
+@media screen and (max-width: 800px) {
+    header h3 {
+        font-size: 1.2em;
+    }
+}
+
 header nav {
     margin-right: 15px;
 }
