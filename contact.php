@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background: url(img/lockscreen.png) no-repeat center center/cover;
+            background: url(img/lockscreen.png) no-repeat center center/cover fixed;
             text-align: center;
         }
 
@@ -142,6 +142,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 Need to find out some more about what I could do for you?
                 Need help with something? Send me a message!
             </p>
+            <p>If you'd like, you can also email me at: <a href="mailto:iarla@nephin.me">iarla@nephin.me</a></p>
             <label for="name"><b>Name*:</b></label>
             <input type="text" id="name" name="name" required>
             <label for="email"><b>Email*:</b></label>
