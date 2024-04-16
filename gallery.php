@@ -52,15 +52,23 @@ ini_set("display_errors", 1);
             border-radius: 10px;
         }
 
+        figure video {
+            aspect-ratio: 4/3;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
         figcaption {
             font-size: 0.8em;
             color: #666;
         }
 
         iframe {
+            aspect-ratio: 4/3;
             width: 100%;
             height: 100%;
-            aspect-ratio: 4/3;
             border-radius: 10px;
         }
 
@@ -115,6 +123,11 @@ ini_set("display_errors", 1);
                 <figcaption>Captured on: Canon IXUS 70</figcaption>
             </figure>
             <figure>
+                <a href="img/gallery/building-sea-rd.jpg" data-lightbox="gallery"><img src="img/gallery/building-sea-rd.jpg"
+                        alt=""></a>
+                <figcaption>Captured on: Canon IXUS 70</figcaption>
+            </figure>
+            <figure>
                 <a href="img/gallery/ambulance.jpg" data-lightbox="gallery"><img src="img/gallery/ambulance.jpg"
                         alt=""></a>
                 <figcaption>Captured on: Canon EOS 250D</figcaption>
@@ -128,6 +141,10 @@ ini_set("display_errors", 1);
                 <a href="img/gallery/salthill-night.jpg" data-lightbox="gallery"><img
                         src="img/gallery/salthill-night.jpg" alt=""></a>
                 <figcaption>Captured on: Canon EOS 250D</figcaption>
+            </figure>
+            <figure>
+                <video src="img/gallery/3d-model.mp4" controls></video>
+                <figcaption>Short animation created in Blender</figcaption>
             </figure>
             <figure>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/lSviicQG97Q?si=VlzX3beyEvEQ2zzD"
