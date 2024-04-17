@@ -154,7 +154,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <option value="support">Support</option>
             </select>
             <label for="message"><b>Message*:</b></label>
-            <textarea id="message" name="message" rows="10" required></textarea>
+            <textarea id="message" name="message" rows="10" maxlength="1000" required></textarea>
             <input type="submit" value="Submit">
             <p>Required fields are marked with an asterisk (*).</p>
         </form>
