@@ -2,8 +2,8 @@
 function createConnection()
 {
     $servername = "localhost";
-    $username = "iarla";
-    $password = "password";
+    $username = "root";
+    $password = "";
     $dbname = "nephin_admin";
 
     // Create connection
