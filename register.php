@@ -4,13 +4,15 @@ ini_set("display_errors", 1);
 // Import the functions.php file
 require_once "functions.php";
 
+// Set the return text to an empty string
+$returnText = "";
+
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Get the username and password from the form
     $username = $_POST["username"];
     $password = $_POST["password"];
     $confirmPassword = $_POST["confirmpassword"];
-    $returnText = "";
 
     // Check if the password and confirm password match
     if ($password !== $confirmPassword) {
@@ -78,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </div>
     <div id="login-box">
         <h1>Create Account</h1>
-        <form action="register.php" method="post">
+        <form action="register.php" method="post" onsubmit="return validateForm()">
             <label for="username">Username:</label>
             <input type="text" name="username" id="username" required><br>
 
@@ -90,7 +92,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             <input type="submit" value="Create Account">
         </form>
+        <p>
+            <?php echo $returnText; ?>
+        </p>
     </div>
+    <script type="text/javascript" src="js/functions.js"></script>
 </body>
 
 </html>
