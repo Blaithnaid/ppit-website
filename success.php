@@ -53,7 +53,7 @@ ini_set("display_errors", 1);
 	</div>
 	<div id="successbox">
 		<h2>You have successfully created an account!<br>Redirecting to the login page in 3s...</h2>
-		<?php header("refresh:3;url=index.php"); ?>
+		<?php header("refresh:3;url=login.php"); ?>
 	</div>
 </body>
 
