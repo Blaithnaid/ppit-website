@@ -4,7 +4,7 @@ USE `nephin_admin`;
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `username` varchar(250),
+  `username` varchar(250) NOT NULL,
   `password` varchar(255) NOT NULL,
   `isAdmin` BOOLEAN NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`),
