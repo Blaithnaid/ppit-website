@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-J2Y2F7J741"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-J2Y2F7J741");
+		</script>
+
+		<title>Nephin Media | Contact</title>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="icon" type="image/x-icon" href="img/icon-192x192.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			main {
+				height: 100%;
+				padding: 50px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				background: url(img/lockscreen.png) no-repeat center
+					center/cover fixed;
+				text-align: center;
+			}
+
+			/* contact form */
+			.contact-form {
+				padding: 20px;
+				border-radius: 10px;
+				background: rgba(255, 255, 255, 0.7);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: 600px;
+				margin: 0 auto;
+			}
+
+			.contact-form label {
+				margin-top: 10px;
+				font-size: 1.2em;
+				text-decoration: underline;
+			}
+
+			.contact-form input,
+			.contact-form select,
+			.contact-form textarea {
+				margin-top: 5px;
+				width: 80%;
+				padding: 10px;
+				font-size: 1em;
+			}
+
+			.contact-form textarea {
+				height: 200px;
+			}
+
+			/* mobile breakpoints */
+			@media screen and (max-width: 800px) {
+				main {
+					padding: 20px;
+				}
+
+				header h3 {
+					font-size: 1.2em;
+				}
+
+				.contact-form {
+					width: 90%;
+				}
+
+				.contact-form input,
+				.contact-form select,
+				.contact-form textarea {
+					width: 100%;
+				}
+			}
+		</style>
+		<link rel="stylesheet" href="css/menu.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="hamburger-toggle" onclick="toggleMenu()">
+				<img src="img/icons8-hamburger-menu.svg" alt="" />
+			</div>
+			<nav id="nav">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="contact.html"><u>Contact</u></a>
+				<a href="gallery.html">Gallery</a>
+			</nav>
+
+			<h3>Nephin Media | Contact</h3>
+			<img src="img/nephin.svg" class="logo-small" alt="Website logo" />
+		</header>
+
+		<nav class="hamburger-menu" id="hamburger-menu" style="display: none">
+			<a href="index.html">•Home</a>
+			<a href="about.html">•About</a>
+			<a href="contact.html">•<u>Contact</u></a>
+			<a href="gallery.html">•Gallery</a>
+		</nav>
+
+		<main>
+			<form
+				action="mailto:iarla.ksb@gmail.com"
+				method="post"
+				class="contact-form"
+			>
+				<h2>Contact Us</h2>
+				<p>
+					Need to find out some more about what I could do for you?
+					Need help with something? Send me an email through this
+					form!<br />
+					<label for="subject"><b>Subject:</b></label
+					><br />
+					<input
+						type="text"
+						name="subject"
+						placeholder="Subject"
+					/><br />
+					<label for="email"><b>Email Address*:</b></label>
+					<input
+						type="email"
+						name="email"
+						placeholder="Your Email Address"
+					/>
+					<label for="body"><b>Message*:</b></label>
+					<textarea
+						name="body"
+						rows="5"
+						cols="30"
+						placeholder="Your Message"
+					></textarea>
+					<input type="submit" value="Send" />
+				</p>
+
+				<p>Required fields are marked with an asterisk (*).</p>
+			</form>
+		</main>
+		<footer>
+			<p>&copy; <span id="year"></span> Nephin Media</p>
+		</footer>
+		<script>
+			document.getElementById("year").textContent =
+				new Date().getFullYear();
+		</script>
+		<script type="text/javascript" src="js/functions.js"></script>
+	</body>
+</html>
