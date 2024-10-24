@@ -126,26 +126,49 @@
 					><br />
 					<input
 						type="text"
+						id="subject"
 						name="subject"
 						placeholder="Subject"
 					/><br />
 					<label for="email"><b>Email Address*:</b></label>
 					<input
 						type="email"
+						id="email"
 						name="email"
 						placeholder="Your Email Address"
-					/>
+						required
+					/><br />
 					<label for="body"><b>Message*:</b></label>
 					<textarea
+						id="body"
 						name="body"
 						rows="5"
 						cols="30"
 						placeholder="Your Message"
-					></textarea>
-					<input type="submit" value="Send" />
+						required
+					></textarea
+					><br />
+					<button type="button" onclick="sendEmail()">Send</button>
 				</p>
 
 				<p>Required fields are marked with an asterisk (*).</p>
+
+				<script>
+					function sendEmail() {
+						const subject = encodeURIComponent(
+							document.getElementById("subject").value
+						);
+						const email = encodeURIComponent(
+							document.getElementById("email").value
+						);
+						const body = encodeURIComponent(
+							document.getElementById("body").value
+						);
+
+						const mailtoLink = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+						window.location.href = mailtoLink;
+					}
+				</script>
 			</form>
 		</main>
 		<footer>
