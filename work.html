@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-J2Y2F7J741"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-J2Y2F7J741");
+		</script>
+
+		<title>Nephin Media | My Work</title>
+		<link rel="stylesheet" href="img/lightbox/src/css/lightbox.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="icon" type="image/x-icon" href="img/icon-192x192.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			header nav {
+				margin-right: 15px;
+			}
+
+			.body-flex {
+				width: 100%;
+			}
+
+			.gallery-flex {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: center;
+				align-items: center;
+			}
+
+			figure {
+				flex-basis: 40%;
+				margin: 10px;
+				text-align: center;
+			}
+
+			figure img {
+				aspect-ratio: 4/3;
+				width: 100%;
+				height: 2fr;
+				object-fit: cover;
+				border-radius: 10px;
+			}
+
+			figure video {
+				aspect-ratio: 4/3;
+				width: 100%;
+				height: 100%;
+				border-radius: 10px;
+				object-fit: cover;
+			}
+
+			figcaption {
+				font-size: 0.8em;
+				color: #666;
+			}
+
+			iframe {
+				aspect-ratio: 4/3;
+				width: 100%;
+				height: 100%;
+				border-radius: 10px;
+			}
+
+			@media screen and (max-width: 800px) {
+				figure {
+					flex-basis: 90%;
+				}
+			}
+		</style>
+		<link rel="stylesheet" href="css/menu.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="hamburger-toggle" onclick="toggleMenu()">
+				<img src="img/icons8-hamburger-menu.svg" alt="" />
+			</div>
+			<nav id="nav">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<a href="gallery.html"><u>Gallery</u></a>
+			</nav>
+
+			<h3>Nephin Media | Gallery</h3>
+			<img src="img/nephin.svg" class="logo-small" alt="Website logo" />
+		</header>
+
+		<nav class="hamburger-menu" id="hamburger-menu" style="display: none">
+			<a href="index.html">•Home</a>
+			<a href="about.html">•About</a>
+			<a href="contact.html">•Contact</a>
+			<a href="work.html"><u>•My Work</u></a>
+			<a href="gallery.html">•Gallery</a>
+		</nav>
+
+		<div class="body-flex"></div>
+		<footer>
+			<p>&copy; <span id="year"></span> Nephin Media</p>
+		</footer>
+		<script>
+			document.getElementById("year").textContent =
+				new Date().getFullYear();
+		</script>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+		<script src="img/lightbox/src/js/lightbox.js"></script>
+		<script type="text/javascript" src="js/functions.js"></script>
+	</body>
+</html>
